@@ -1,0 +1,25 @@
+<div class="text-center mx-auto m-5 p-1">
+    <h4 class="title">REALISATIONS</h4>
+    <p class="title">
+        Des surfaces commerciales aux bâtiments publics et industriels, chaque dallage que nous réalisons allie robustesse, 
+        précision et durabilité. Grâce à notre expertise et au respect des normes de qualité, 
+        nous concevons des surfaces capables de résister aux fortes sollicitations et à l’usure du temps. 
+        Découvrez quelques-unes de nos réalisations.
+    </p>
+</div>
+
+<div class="card-group row row-cols-1 row-cols-md-4 g-2 p-1 mb-3 align-items-stretch">
+    @for (project of projects; track $index) {
+        <div class="col">
+            <div class="card h-100" style="min-height: clamp(320px, 40vh, 420px);">
+                <img [src]="project.dir + project.mainImg" class="card-img-top" [alt]="project.title" style="height: clamp(180px, 24vh, 280px); width: 100%; object-fit: cover;">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title title">{{project.title}}</h5>
+                    <p class="card-text text flex-grow-1">{{project.description}}</p>
+                    <p class="card-text text mt-auto"><small class="text-muted">{{project.date}}</small></p>
+                    <a [routerLink]="'/project/'+project.id" class="ms-1 link">En savoir plus </a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

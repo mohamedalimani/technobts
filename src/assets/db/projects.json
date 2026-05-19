@@ -1,0 +1,101 @@
+[
+  {
+    "id":1,
+    "dir": "assets/projects/aeroport-tozeur",
+    "title": "AÉROPORT TOZEUR",
+    "description": "Projet de rénovation et d’aménagement de l’aéroport de Tozeur avec modernisation des espaces d’accueil et des infrastructures techniques.",
+    "mainImg": "/1.jpg",
+    "secondaryImg": ["/2.jpg", "/3.jpg"],
+    "date": "14 Mars 2019"
+  },
+  {
+    "id":2,
+    "dir": "assets/projects/Mall-Sfax",
+    "title": "CENTRE COMMERCIAL SFAX",
+    "description": "Construction d’un centre commercial moderne à Sfax intégrant des espaces commerciaux, de restauration et de loisirs.",
+    "mainImg": "/1.jpg",
+    "secondaryImg": ["/2.jpg", "/3.jpg"],
+    "date": "22 Novembre 2020"
+  },
+  {
+    "id":3,
+    "dir": "assets/projects/nabeul",
+    "title": "RÉSIDENCE NABEUL",
+    "description": "Réalisation d’une résidence résidentielle haut standing à Nabeul avec architecture contemporaine et espaces verts.",
+    "mainImg": "/1.jpg",
+    "secondaryImg": ["/2.jpg", "/3.jpg"],
+    "date": "09 Juillet 2021"
+  },
+  {
+    "id":4,
+    "dir": "assets/projects/riyessa-monastir",
+    "title": "PALAIS PRÉSIDENTIEL MONASTIR",
+    "description": "Développement d’un complexe immobilier à Monastir comprenant des appartements modernes et des équipements collectifs.",
+    "mainImg": "/1.jpg",
+    "secondaryImg": ["/3.jpg", "/4.jpg", "/5.jpg"],
+    "date": "30 Janvier 2022"
+  },
+  {
+    "id":5,
+    "dir": "assets/projects/toray-group",
+    "title": "GROUPE TORAY",
+    "description": "Aménagement d’un site industriel pour le groupe Toray avec optimisation des espaces de production et de stockage.",
+    "mainImg": "/1.jpg",
+    "secondaryImg": ["/2.jpg", "/3.jpg"],
+    "date": "18 Septembre 2023"
+  },
+  {
+    "id":6,
+    "dir": "assets/projects/project-0",
+    "title": "TOUR SKYLINE",
+    "description": "Construction d’une tour de bureaux moderne avec façades vitrées, espaces de coworking et parkings souterrains.",
+    "mainImg": "/1.jpg",
+    "secondaryImg": ["/2.jpg", "/3.jpg"],
+    "date": "12 Mai 2024"
+  },
+  {
+    "id":7,
+    "dir": "assets/projects/project-1",
+    "title": "COMPLEXE GREEN VALLEY",
+    "description": "Création d’un complexe résidentiel écologique intégrant des solutions d’économie d’énergie et des jardins paysagers.",
+    "mainImg": "/1.jpg",
+    "secondaryImg": ["/2.jpg", "/3.jpg"],
+    "date": "03 Décembre 2025"
+  },
+  {
+    "id":8,
+    "dir": "assets/projects/project-2",
+    "title": "CENTRE D’AFFAIRES OASIS",
+    "description": "Réalisation d’un centre d’affaires offrant des bureaux modernes, salles de réunion et espaces professionnels flexibles.",
+    "mainImg": "/1.jpg",
+    "secondaryImg": ["/2.jpg", "/3.jpg"],
+    "date": "27 Août 2019"
+  },
+  {
+    "id":9,
+    "dir": "assets/projects/project-3",
+    "title": "SUNSET PLAZA",
+    "description": "Développement d’un espace commercial et résidentiel combinant boutiques, cafés et appartements haut de gamme.",
+    "mainImg": "/1.jpg",
+    "secondaryImg": ["/2.jpg", "/3.jpg"],
+    "date": "16 Avril 2020"
+  },
+  {
+    "id":10,
+    "dir": "assets/projects/project-4",
+    "title": "CRYSTAL HEIGHTS",
+    "description": "Projet immobilier résidentiel avec design contemporain, terrasses panoramiques et équipements de loisirs privés.",
+    "mainImg": "/1.jpg",
+    "secondaryImg": ["/2.jpg", "/3.jpg"],
+    "date": "05 Octobre 2021"
+  },
+  {
+    "id":11,
+    "dir": "assets/projects/project-5",
+    "title": "VILLAS HORIZON",
+    "description": "Construction d’un ensemble de villas modernes avec piscines privées et finitions architecturales premium.",
+    "mainImg": "/1.jpg",
+    "secondaryImg": [],
+    "date": "21 Juin 2022"
+  }
+]

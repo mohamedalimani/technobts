@@ -1,0 +1,172 @@
+<div class="container mt-5 mb-5">
+
+    <div class="row">
+        <div class="col">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="assets/more/dallage industriel/1.jpeg" height="500px" width="400px" class="d-block w-100" alt="...">
+                </div>
+                @for (img of dallageImg; track $index) {
+                    <div class="carousel-item">
+                        <img [src]="dallageDir+img" height="500px" width="400px" class="d-block w-100" alt="...">
+                    </div>
+                }
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+        </div>
+        <div class="col">
+            <h1 class="title"> DALLAGE INDUSTRIEL</h1>
+
+            <!-- Description -->
+            <p class="mb-5" 
+            style="color: #a0a0a0; font-size: 0.95rem; line-height: 1.8; max-width: 42ch;">
+            Permet de fournir une surface en béton robuste, capable de supporter 
+            d'importantes charges de circulation — ateliers, entrepôts, parkings, 
+            zones de production, hôpitaux, centres commerciaux et complexes industriels.
+            </p>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <!-- Feature list -->
+            <h5 class="m-4 title text-center">            
+                <img src="assets/icons/avantage.png" height="25" width="25" alt="avantages">
+                AVANTAGES
+            </h5>
+            <ul class="list-unstyled d-flex flex-column gap-2">
+                <li class="d-flex align-items-start gap-3" style="font-size: 0.9rem;">
+                    <span style="color: #c0392b; margin-top: 2px;">&#9632;</span>
+                    Haute résistance à l'abrasion et aux chocs
+                </li>
+                <li class="d-flex align-items-start gap-3" style="font-size: 0.9rem;">
+                    <span style="color: #c0392b; margin-top: 2px;">&#9632;</span>
+                    Augmente la résistance de la surface en béton
+                </li>
+                <li class="d-flex align-items-start gap-3" style="font-size: 0.9rem;">
+                    <span style="color: #c0392b; margin-top: 2px;">&#9632;</span>
+                    Fournit des surfaces denses, faciles à nettoyer et sans poussière
+                </li>
+                <li class="d-flex align-items-start gap-3" style="font-size: 0.9rem;">
+                    <span style="color: #c0392b; margin-top: 2px;">&#9632;</span>
+                    Absence de rouille et compatibilité avec les zones humides
+                </li>
+            </ul>
+    </div>
+
+    <div class="row mt-3 g-3">
+
+        <h5 class="m-4 title text-center">
+            <img src="assets/icons/technique.png" height="25" width="25" alt="">
+            NOS SOLUTIONS HAUTE PERFORMANCE
+        </h5>
+
+        <div class="row bg-danger p-5 mt-4">
+            <!-- Images Column -->
+            <div class="col-md-6 d-flex">
+
+                <div class="d-flex flex-column gap-1" style="width: 400px;">
+
+                    <!-- Top Image -->
+                    <div class="row"  style="height: 250px;">
+                        <img
+                            src="assets/more/dallage industriel/techniques/joint cosinus/1.jpeg"
+                            class="w-100 h-100"
+                            alt="joint cosinus">
+                    </div>
+
+                    <!-- Bottom Images -->
+                    <div class="row g-3"  style="height: 250px;">
+
+                        <div class="col-7">
+                            <img
+                                src="assets/more/dallage industriel/techniques/joint cosinus/2.jpeg"
+                                class="w-100 h-100"
+                                alt="joint cosinus">
+                        </div>
+
+                        <div class="col-5">
+                            <img
+                                src="assets/more/dallage industriel/techniques/joint cosinus/3.jpeg"
+                                class="w-100 h-100"
+                                alt="joint cosinus">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Text Column -->
+            <div class="col-md-6 d-flex">
+
+                <div class="d-flex flex-column justify-content-center h-100">
+
+                    <h5 class="title text-light">Joint cosinus</h5>
+
+                    <p class="text text-light">
+                        Le joint cosinus est un système de joint utilisé dans le dallage industriel.
+                        Sa forme ondulée (en forme de cosinus) permet de mieux répartir les
+                        charges lors du passage des roues et limite les vibrations ainsi que
+                        l’usure des bords du béton.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row bg-dark p-5 mt-4">
+            <!-- Images Column -->
+            <div class="col-md-6 d-flex">
+
+                <div class="d-flex flex-column gap-3" style="width: 400px;">
+
+                    <!-- Top Image -->
+                    <div class="row" style="height: 250px;">
+                        <img src="assets/more/dallage industriel/techniques/trait soudé/1.jpeg"
+                            class="w-100 h-100" alt="trait soudé">
+                    </div>
+
+                    <!-- Bottom Images -->
+                    <div class="row" style="height: 250px;">
+                        <img src="assets/more/dallage industriel/techniques/trait soudé/2.jpeg"
+                            class="w-100 h-100" alt="trait soudé">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Text Column -->
+            <div class="col-md-6 d-flex">
+
+                <div class="d-flex flex-column justify-content-center h-100">
+
+                    <h5 class="title text-light">Trait soudé</h5>
+
+                    <p class="text text-light">
+                        Le trait soudé est une technique utilisée dans le dallage industriel pour assembler deux parties de 
+                        béton à l’aide de profils métalliques soudés.
+                        Il permet de renforcer les zones de jonction, d’assurer une meilleure stabilité de la dalle et de 
+                        limiter les déformations causées 
+                        par les charges lourdes et les passages répétés.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>

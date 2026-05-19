@@ -1,0 +1,6 @@
+.section-title-wrap { display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 2rem 0 1.5rem; }
+.section-title-label { display: flex; align-items: center; gap: 7px; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #1D9E75; font-weight: 500; }
+.section-title-label span { display: inline-block; width: 28px; height: 1.5px; background: #1D9E75; border-radius: 2px; }
+.section-title-text { font-size: 22px; font-weight: 500; color: #212529; margin: 0; display: flex; align-items: center; gap: 10px; }
+.section-title-text img { width: 26px; height: 26px; object-fit: contain; }
+.section-title-underline { width: 48px; height: 3px; background: #1D9E75; border-radius: 2px; }

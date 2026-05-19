@@ -1,0 +1,31 @@
+.card{
+    cursor: pointer;
+}
+
+.link{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Dim all cards by default when any card is hovered */
+.card-group:hover .card {
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+/* Keep the hovered card fully visible */
+.card-group:hover .card:hover {
+  opacity: 1;
+  .link{
+    opacity: 1;
+  }
+}
+
+/* Smooth transition on initial state too */
+.card-group .card {
+  transition: opacity 0.3s ease;
+}
+
+a{
+    text-decoration: none;
+}

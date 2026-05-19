@@ -1,0 +1,135 @@
+<!-- HERO -->
+<div class="overflow-hidden">
+	<div class="container-fluid col-xxl-8">
+		<div class="row flex-lg-nowrap align-items-center g-5">
+
+			<div class="order-lg-1 w-100 p-0">
+				<img style="clip-path: polygon(25% 0%, 100% 0%, 100% 99%, 0% 100%);" src="assets/hero.jpg" class="d-block mx-lg-auto img-fluid" alt="Photo by Milad Fakurian" loading="lazy" srcset="" >
+			</div>
+
+			<div class="col-lg-6 col-xl-5 text-center text-lg-start pt-lg-5 mt-xl-4">
+				<div class="lc-block mb-4">
+					<div editable="rich">
+						<h1 class="fw-bold display-3">Dallage industriel leader en Tunisie</h1>
+					</div>
+				</div>
+
+				<div class="lc-block mb-5">
+					<div editable="rich">
+						<p class="text"> Avec ses 20 ans d'expériences et ses performances inégalées, TECHNO-BTS est le LEADER en dallage industirel en Tunisie</p>
+					</div>
+				</div>
+
+				<div class="lc-block mb-6"><a class="btn btn-danger px-4 me-md-2 btn-lg" href="#" role="button">Contactez-nous</a>
+				</div>
+
+				<div class="lc-block">
+					<div editable="rich">
+						<p class="fw-bold">Collaboration commerciale fondée sur la confiance :</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="lc-block col-2"><img class="img-fluid wp-image-975" src="assets/references/leoni.jpg" width="70px" height="300"></div>
+					<div class="lc-block col-2"><img class="img-fluid wp-image-977" src="assets/references/mazda.jpg" width="70px" height="300"></div>
+					<div class="lc-block col-2"><img class="img-fluid wp-image-974" src="assets/references/tav.png" width="70px" height="300"></div>
+					<div class="lc-block col-2"><img class="img-fluid wp-image-967" src="assets/references/renault.jpg" width="70px" height="300"></div>
+					<div class="lc-block col-2"><img class="img-fluid wp-image-967" src="assets/references/decathlon.png" width="70px" height="300"></div>
+					<div class="lc-block col-2"><img class="img-fluid wp-image-967" src="assets/references/astral.png" width="70px" height="300"></div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+ 
+<!-- STATS -->
+<div class="card text-center mx-auto m-5 rounded-0 border-0 text-white"
+     style="background: linear-gradient(135deg, #d61919 0%, #d45858 40%, #8b0000 100%); --bs-card-border-radius: 0;">
+
+    <div class="text mb-1 mt-3">
+        <h3 class="title text-white">Notre Savoir-Faire en Données</h3>
+        <span class="text text-white">
+            Chaque projet réalisé témoigne de notre savoir-faire, de notre rigueur et de notre engagement envers la qualité.
+        </span>
+    </div>
+
+    <div class="row m-1 mb-3">
+
+        <div class="col-4">
+            <img src="assets/success.png" height="50px" width="50px" alt="">
+            <h1>99%</h1>
+            <span class="title text-white">Projets livrés dans les délais</span>
+        </div>
+
+        <div class="col-4">
+            <img src="assets/clock.png" height="50px" width="50px" alt="">
+            <h1 class="text-nowrap">21,000+</h1>
+            <span class="title text-white">Heures de travail sans accident</span>
+        </div>
+
+        <div class="col-4">
+            <img src="assets/count.png" height="50px" width="50px" alt="">
+            <h1>23+</h1>
+            <span class="title text-white">Projets réalisés avec succès</span>
+        </div>
+
+    </div>
+
+</div>
+
+<!--EXPERTISE-->
+<div class="card">
+    
+</div>
+
+<!--PROJECTS-->
+<div class="card-group row mb-3 position-relative">
+
+    <div class="text-center mx-auto m-5">
+        <h4 class="title">REALISATIONS</h4>
+        <p class="title">
+            De la grande surface au bâtiment public, chaque dalle que nous posons est le reflet de notre engagement envers la durabilité 
+            et la précision. Découvrez quelques-uns de <span class="text-danger">nos chantiers réalisés</span> avec expertise.
+        </p>
+    </div>
+
+    @for (project of projects; track $index) {
+        <div class="col-3 mt-2 p-0">
+            <a [routerLink]="'/project/'+project.id">
+
+                <div class="card border-0">
+                    <!-- Image + overlay wrapper -->
+                    <div class="card-img-wrapper">
+
+                    <img [src]="project.dir + project.mainImg" class="card-img vh-100"  [alt]="project.title">
+
+                    <!-- Dark overlay -->
+                    <div class="card-overlay"></div>
+
+                    <!-- Centered text on top -->
+                    <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center">
+                        <h5 class="card-title project-title">{{ project.title }}</h5>
+                        <p class="card-text mb-2 project-subtitle">{{ project.description }}</p>
+                        <small class="project-subtitle">{{ project.date }}</small>
+                    </div>
+
+                    </div>
+                </div>
+            </a>
+        </div>
+    }
+
+    <div class="position-absolute p-0 bottom-0 w-100 opacity-75">
+
+            <div class="text-center mt-4">
+                <button class="btn btn-danger w-100 clip-wavy" style="height: 60px;">
+                    <a class="link text-white" routerLink="/projects">
+                        En savoir plus 
+                        <span class="badge text-bg-light">{{ count }}</span>
+                    </a>
+                </button>
+            </div>
+        
+    </div>
+
+</div>

@@ -1,0 +1,171 @@
+<div class="container my-5">
+
+    <div class="row">
+        <div class="text-center mx-auto m-5">
+            <h5 class="title text-secondary">Nous sommes là pour vous</h5>
+            <h3 class="title">Contactez-nous</h3>
+            <p class="title p-2 text-secondary">
+                Vous avez un projet ? 
+                Notre équipe répond à toutes vos questions et se déplace pour un devis gratuit.
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="ct-grid">
+
+            <div class="ct-card">
+            <div class="ct-icon"><img src="assets/icons/experience.png" alt=""></div>
+                <p class="ct-label">Téléphone</p>
+                <hr class="ct-divider">
+                <p class="ct-value">+216 73 262 472</p>
+                <a href="tel:+21673262472"><button class="ct-btn">Appeler</button></a>
+            </div>
+
+            <div class="ct-card">
+            <div class="ct-icon"><img src="assets/icons/waterproof.png" alt=""></div>
+            <p class="ct-label">E-mail</p>
+            <hr class="ct-divider">
+            <p class="ct-value">technobtsarl&#64;gmail.com</p>
+            <a href="mailto:technobtsarl@gmail.com"><button class="ct-btn">Écrire</button></a>
+            </div>
+
+            <div class="ct-card">
+            <div class="ct-icon"><img src="assets/icons/projects.png" alt=""></div>
+            <p class="ct-label">Adresse</p>
+            <hr class="ct-divider">
+            <p class="ct-value">Rue Rayahine 4070<br>M'saken, Tunisie</p>
+            <a href="https://maps.google.com/?q=Rue+Rayahine+4070+Msaken+Tunisia" target="_blank">
+                <button class="ct-btn">Itinéraire</button>
+            </a>
+            </div>
+
+            <div class="ct-card">
+            <div class="ct-icon"><img src="assets/icons/guarantee.png" alt=""></div>
+            <p class="ct-label">Horaires</p>
+            <hr class="ct-divider">
+            <p class="ct-value">Lun – Ven<br>08h00 – 18h00</p>
+            <span class="ct-badge">Ouvert</span>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-6 p-0">
+            <div class="form-wrap">
+
+            <p class="form-heading">Envoyer un message</p>
+            <p class="form-sub">Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.</p>
+            <hr class="form-divider">
+
+            <div class="field-row">
+                <div class="field">
+                <label for="prenom">Prénom <span class="required">*</span></label>
+                <input type="text" id="prenom" placeholder="Ahmed">
+                </div>
+                <div class="field">
+                <label for="nom">Nom <span class="required">*</span></label>
+                <input type="text" id="nom" placeholder="Ben Ali">
+                </div>
+            </div>
+
+            <div class="field-row">
+                <div class="field">
+                <label for="tel">Téléphone <span class="required">*</span></label>
+                <input type="tel" id="tel" placeholder="+216 XX XXX XXX">
+                </div>
+                <div class="field">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="vous@exemple.com">
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="sujet">Sujet <span class="required">*</span></label>
+                <div class="select-wrap">
+                <select id="sujet">
+                    <option value="">Choisir un sujet…</option>
+                    <option>Demande de devis gratuit</option>
+                    <option>Question technique</option>
+                    <option>Suivi de chantier</option>
+                    <option>Garantie décennale</option>
+                    <option>Autre</option>
+                </select>
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="msg">Message <span class="required">*</span></label>
+                <textarea id="msg" maxlength="500"
+                placeholder="Décrivez votre projet ou votre demande…"
+                oninput="document.getElementById('char-count').textContent=this.value.length">
+                </textarea>
+                <div class="char-hint"><span id="char-count">0</span> / 500</div>
+            </div>
+
+            <div class="form-footer">
+                <span class="privacy-note">🔒 Vos données restent confidentielles.</span>
+                <button class="submit-btn" onclick="handleSubmit()">
+                Envoyer &rarr;
+                </button>
+            </div>
+
+            <div class="success-banner" id="success-banner" style="display:none">
+                ✓ Message envoyé ! Nous vous contacterons très prochainement.
+            </div>
+
+            </div>
+        </div>
+
+        <div class="col-6 p-0">
+            <div class="loc-card">
+
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.4686570092426!2d10.564461397468367!3d35.72559455612047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fdf5563ad40735%3A0x3479f25a8cdfd934!2sTECHNO%20BTS!5e1!3m2!1sen!2stn!4v1779153112660!5m2!1sen!2stn" width="100%" height="450" style="border:0; padding: 0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+                <div class="loc-body">
+
+                <div class="loc-header">
+                    <p class="loc-title">Notre siège social</p>
+                    <span class="loc-badge">Ouvert</span>
+                </div>
+
+                <hr class="loc-divider">
+
+                <div class="loc-row">
+                    <img src="assets/icons/location.png" alt="">
+                    <div class="loc-row-body">
+                    <p class="loc-row-title">Rue Rayahine, M'saken, Tunisie</p>
+                    <p class="loc-row-sub">À 5 min du centre-ville</p>
+                    </div>
+                </div>
+
+                <div class="loc-row">
+                    <img src="assets/icons/clock.png" alt="">
+                    <div class="loc-row-body">
+                    <p class="loc-row-title">Horaires d'ouverture</p>
+                    <div class="hours-table">
+                        <span class="day">Lun – Ven</span><span class="time">08h00 – 18h00</span>
+                        <span class="day">Samedi</span>   <span class="time">09h00 – 13h00</span>
+                        <span class="day">Dimanche</span> <span class="time closed">Fermé</span>
+                    </div>
+                    </div>
+                </div>
+
+                <hr class="loc-divider">
+
+                <div class="loc-row">
+                    <img src="assets/icons/car.png" alt="">
+                    <div class="loc-row-body">
+                    <p class="loc-row-sub">Parking gratuit disponible sur place</p>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>

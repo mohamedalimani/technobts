@@ -1,0 +1,62 @@
+#hero{
+    position: relative;
+    margin: 0 auto;
+    width: 900px;
+    height: 600px;
+    background-image: url(../../assets/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    #A{
+        position: absolute;
+        top: 7%;
+        left: 3%;
+        color:#FFF;
+    }
+
+    #B{
+        position: absolute;
+        bottom: 0;
+        right: 3%;
+        color:#FFF;
+    }
+}
+
+.card-img-top {
+  height: 500px;       /* fixed height for all images */
+  object-fit: cover;    /* crops cleanly, no distortion */
+  width: 100%;
+}
+
+.card-group{
+    margin: auto;
+}
+
+.clip-wavy {
+  clip-path: polygon(
+    0% 20%, 50% 15%, 100% 20%,
+    100% 100%, 50% 100%, 0% 100%
+  );
+}
+
+.card {
+  cursor: pointer;
+  overflow: hidden;
+
+  p, small {
+    opacity: 0;
+    transform: translateY(12px);       /* start offset downward */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+}
+
+.card:hover {
+  p, small {
+    opacity: 1;
+    transform: translateY(0);          /* slide up into place */
+  }
+}
+
+a{
+  text-decoration: none;
+}

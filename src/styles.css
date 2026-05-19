@@ -1,1 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'link';
+    src: url('assets/fonts/Rajdhani/Rajdhani-Medium.ttf');
+    font-weight:normal;
+}
+
+@font-face {
+    font-family: 'title';
+    src: url('assets/fonts/Proxima\ Nova/Proxima Nova\ Semibold/Proxima\ Nova\ Semibold.ttf');
+    font-weight:normal;
+}
+
+@font-face {
+    font-family: 'text';
+    src: url('assets/fonts/Proxima\ Nova/Proxima\ Nova\ Regular/Proxima\ Nova\ Regular.ttf');
+    font-weight:normal;
+}
+
+@font-face {
+    font-family: 'small-text';
+    src: url('assets/fonts/Proxima\ Nova/Proxima\ Nova\ Light/Proxima\ Nova\ Light.ttf');
+    font-weight:normal;
+}
+
+.link{
+    font-family: 'link';
+    color: #000;
+    text-decoration: none;
+}
+
+.title{
+    font-family: 'title';
+    color: #000;
+}
+
+.text{
+    font-family: 'small-text';
+    color: #000;
+}
+
+.small-text{
+    font-family: 'small-text';
+    color: #000;
+}
+
+h6, h4, h3{
+    font-family: 'title';
+}
+
+ul, p{
+    list-style-type: none;
+    font-family: 'text';
+}
+
+.project-title{
+    font-family: 'title';
+    font-size: 3rem;
+    color: #FFF;
+}
+
+.project-subtitle{
+    font-family: 'title';
+    font-size: 1rem;
+    color: #FFF;
+}
