@@ -1,76 +1,80 @@
 <div class="container mt-5 mb-5">
 
     <div class="row">
-        <div class="col">
+
+        <div class="col-12 col-md-6 pb-3">
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                <img src="assets/more/dallage industriel/1.jpeg" height="500px" width="400px" class="d-block w-100" alt="...">
+                <img src="assets/more/dallage industriel/1.jpeg" height="500px"  class="d-block w-100" alt="...">
                 </div>
                 @for (img of dallageImg; track $index) {
                     <div class="carousel-item">
-                        <img [src]="dallageDir+img" height="500px" width="400px" class="d-block w-100" alt="...">
+                        <img [src]="dallageDir+img" height="500px"  class="d-block w-100" alt="...">
                     </div>
                 }
-
             </div>
+            
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
+
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
             </div>
         </div>
-        <div class="col">
+        <div class="col-12 col-md-6">
             <h1 class="title"> DALLAGE INDUSTRIEL</h1>
 
             <!-- Description -->
-            <p class="mb-5" 
-            style="color: #a0a0a0; font-size: 0.95rem; line-height: 1.8; max-width: 42ch;">
-            Permet de fournir une surface en béton robuste, capable de supporter 
-            d'importantes charges de circulation — ateliers, entrepôts, parkings, 
-            zones de production, hôpitaux, centres commerciaux et complexes industriels.
+            <p class="mb-5" style="color: #a0a0a0; font-size: 0.95rem; line-height: 1.8; max-width: 42ch;">
+                Permet de fournir une surface en béton robuste, capable de supporter 
+                d'importantes charges de circulation — ateliers, entrepôts, parkings, 
+                zones de production, hôpitaux, centres commerciaux et complexes industriels.
             </p>
         </div>
+
     </div>
 
     <div class="row mt-3">
         <!-- Feature list -->
-            <h5 class="m-4 title text-center">            
-                <img src="assets/icons/avantage.png" height="25" width="25" alt="avantages">
-                AVANTAGES
-            </h5>
-            <ul class="list-unstyled d-flex flex-column gap-2">
-                <li class="d-flex align-items-start gap-3" style="font-size: 0.9rem;">
-                    <span style="color: #c0392b; margin-top: 2px;">&#9632;</span>
-                    Haute résistance à l'abrasion et aux chocs
-                </li>
-                <li class="d-flex align-items-start gap-3" style="font-size: 0.9rem;">
-                    <span style="color: #c0392b; margin-top: 2px;">&#9632;</span>
-                    Augmente la résistance de la surface en béton
-                </li>
-                <li class="d-flex align-items-start gap-3" style="font-size: 0.9rem;">
-                    <span style="color: #c0392b; margin-top: 2px;">&#9632;</span>
-                    Fournit des surfaces denses, faciles à nettoyer et sans poussière
-                </li>
-                <li class="d-flex align-items-start gap-3" style="font-size: 0.9rem;">
-                    <span style="color: #c0392b; margin-top: 2px;">&#9632;</span>
-                    Absence de rouille et compatibilité avec les zones humides
-                </li>
-            </ul>
+        <h5 class="mb-2 title text-center">            
+            <img src="assets/icons/avantage.png" height="25" width="25" alt="avantages">
+            AVANTAGES
+        </h5>
+        
+        <ul class="list-unstyled d-flex flex-column gap-2">
+            <li class="d-flex align-items-start gap-3" style="font-size: 0.9rem;">
+                <span style="color: #c0392b; margin-top: 2px;">&#9632;</span>
+                Haute résistance à l'abrasion et aux chocs
+            </li>
+            <li class="d-flex align-items-start gap-3" style="font-size: 0.9rem;">
+                <span style="color: #c0392b; margin-top: 2px;">&#9632;</span>
+                Augmente la résistance de la surface en béton
+            </li>
+            <li class="d-flex align-items-start gap-3" style="font-size: 0.9rem;">
+                <span style="color: #c0392b; margin-top: 2px;">&#9632;</span>
+                Fournit des surfaces denses, faciles à nettoyer et sans poussière
+            </li>
+            <li class="d-flex align-items-start gap-3" style="font-size: 0.9rem;">
+                <span style="color: #c0392b; margin-top: 2px;">&#9632;</span>
+                Absence de rouille et compatibilité avec les zones humides
+            </li>
+        </ul>
     </div>
 
-    <div class="row mt-3 g-3">
+    <div class="row mt-3">
 
-        <h5 class="m-4 title text-center">
+        <h5 class="mb-2 title text-center">
             <img src="assets/icons/technique.png" height="25" width="25" alt="">
             NOS SOLUTIONS HAUTE PERFORMANCE
         </h5>
 
-        <div class="row bg-danger p-5 mt-4">
+        <div class="row bg-danger mt-4 p-5">
+
             <!-- Images Column -->
             <div class="col-md-6 d-flex">
 
@@ -108,11 +112,11 @@
             </div>
 
             <!-- Text Column -->
-            <div class="col-md-6 d-flex">
+            <div class="col-md-6 d-flex pb-2">
 
                 <div class="d-flex flex-column justify-content-center h-100">
 
-                    <h5 class="title text-light">Joint cosinus</h5>
+                    <h5 class="title text-light mt-2">Joint cosinus</h5>
 
                     <p class="text text-light">
                         Le joint cosinus est un système de joint utilisé dans le dallage industriel.
@@ -124,9 +128,10 @@
                 </div>
 
             </div>
+
         </div>
 
-        <div class="row bg-dark p-5 mt-4">
+        <div class="row bg-dark mt-4 p-5">
             <!-- Images Column -->
             <div class="col-md-6 d-flex">
 
@@ -153,7 +158,7 @@
 
                 <div class="d-flex flex-column justify-content-center h-100">
 
-                    <h5 class="title text-light">Trait soudé</h5>
+                    <h5 class="title text-light mt-2">Trait soudé</h5>
 
                     <p class="text text-light">
                         Le trait soudé est une technique utilisée dans le dallage industriel pour assembler deux parties de 
@@ -167,6 +172,7 @@
 
             </div>
         </div>
+        
     </div>
 
 </div>

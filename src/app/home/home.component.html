@@ -77,11 +77,6 @@
 
 </div>
 
-<!--EXPERTISE-->
-<div class="card">
-    
-</div>
-
 <!--PROJECTS-->
 <div class="card-group row mb-3 position-relative">
 
@@ -94,7 +89,7 @@
     </div>
 
     @for (project of projects; track $index) {
-        <div class="col-3 mt-2 p-0">
+        <div class="col-12 col-md-3 mt-2 p-0">
             <a [routerLink]="'/project/'+project.id">
 
                 <div class="card border-0">

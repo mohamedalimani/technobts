@@ -23,7 +23,6 @@ export class ProjectComponent implements OnInit {
     this.ts.getProject(this.id).subscribe({
       next:(res)=>{
         this.project=res;
-        console.log(this.project);
       },
       error:(error)=>{
         console.error(error);
