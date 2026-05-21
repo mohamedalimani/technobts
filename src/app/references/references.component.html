@@ -1,0 +1,56 @@
+<section class="ref-section">
+
+  <!-- Header -->
+  <div class="ref-header">
+    <span class="text text-warning">Reconnue par les leaders du secteur</span>
+    <h2 class="title text-white">Les entreprises qui nous ont choisis</h2>
+    <div class="ref-divider"></div>
+  </div>
+
+  <!-- Marquee stage -->
+  <div class="ref-stage">
+
+    <!-- Row 1 — scrolls LEFT -->
+    <div class="ref-track ref-track--left">
+      <div class="ref-belt">
+        @for (src of tripleA; track $index) {
+            <div class="ref-card">
+                <img [src]="src" [alt]="'Client ' + ($index + 1)" loading="lazy" />
+            </div>
+        }
+
+      </div>
+    </div>
+
+    <!-- Row 2 — scrolls RIGHT -->
+    <div class="ref-track ref-track--right">
+      <div class="ref-belt">
+        @for (src of tripleB; track $index) {
+            <div class="ref-card">
+                <img [src]="src" [alt]="'Client ' + ($index + 1)" loading="lazy" />
+            </div>
+        }
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Stats strip -->
+  <div class="ref-stats">
+    <div class="ref-stat">
+      <span class="ref-stat__value">38+</span>
+      <span class="ref-stat__label">Clients</span>
+    </div>
+    <div class="ref-stat-sep"></div>
+    <div class="ref-stat">
+      <span class="ref-stat__value">100%</span>
+      <span class="ref-stat__label">Satisfaction</span>
+    </div>
+    <div class="ref-stat-sep"></div>
+    <div class="ref-stat">
+      <span class="ref-stat__value">24/7</span>
+      <span class="ref-stat__label">Support</span>
+    </div>
+  </div>
+
+</section>

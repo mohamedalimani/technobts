@@ -10,5 +10,6 @@ export const routes: Routes = [
     {path:'rampe', loadComponent:()=>import('./rampe/rampe.component').then(m=>m.RampeComponent)},
     {path:'protection', loadComponent:()=>import('./protection/protection.component').then(m=>m.ProtectionComponent)},
     {path:'contact', loadComponent:()=>import('./contact/contact.component').then(m=>m.ContactComponent)},
+    {path:'references', loadComponent:()=>import('./references/references.component').then(m=>m.ReferencesComponent)},
     {path:'**', redirectTo:''}
 ];

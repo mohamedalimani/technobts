@@ -1,0 +1,218 @@
+/* ─── Design tokens ─────────────────────────────────────────────────────────── */
+:host {
+  --bg:          #0a0a0f;
+  --card-bg:     #1a1a24;
+  --card-border: rgba(255, 255, 255, 0.07);
+  --card-hover:  rgba(255, 255, 255, 0.12);
+  --accent:      #4f8ef7;
+  --accent-glow: rgba(79, 142, 247, 0.25);
+  --text-primary:#f0f0f5;
+  --text-muted:  rgba(240, 240, 245, 0.45);
+
+  --card-w:  160px;
+  --card-h:  80px;
+  --gap:     20px;
+
+  /* belt = 19 cards × (160 + 20)px = 3420px */
+  --belt-w:  3420px;
+
+  --speed-left:  38s;
+  --speed-right: 44s;
+}
+
+/* ─── Section shell ──────────────────────────────────────────────────────────── */
+.ref-section {
+  background: var(--bg);
+  padding: clamp(3rem, 8vw, 6rem) 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.ref-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ─── Header ─────────────────────────────────────────────────────────────────── */
+.ref-header {
+  text-align: center;
+  padding: 0 1rem 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.ref-divider {
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+  margin: 0 auto;
+}
+
+/* ─── Stage ──────────────────────────────────────────────────────────────────── */
+.ref-stage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.ref-stage::before,
+.ref-stage::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: clamp(60px, 12vw, 180px);
+  z-index: 2;
+  pointer-events: none;
+}
+.ref-stage::before {
+  left: 0;
+  background: linear-gradient(to right, var(--bg) 0%, transparent 100%);
+}
+.ref-stage::after {
+  right: 0;
+  background: linear-gradient(to left, var(--bg) 0%, transparent 100%);
+}
+
+/* ─── Track ──────────────────────────────────────────────────────────────────── */
+.ref-track {
+  overflow: hidden;
+  padding: 4px 0;
+}
+
+.ref-track:hover .ref-belt {
+  animation-play-state: paused;
+}
+
+/* ─── Belt ───────────────────────────────────────────────────────────────────── */
+.ref-belt {
+  display: flex;
+  gap: var(--gap);
+  width: max-content;
+  will-change: transform;
+}
+
+.ref-track--left .ref-belt {
+  animation: scroll-left var(--speed-left) linear infinite;
+}
+
+.ref-track--right .ref-belt {
+  animation: scroll-right var(--speed-right) linear infinite;
+}
+
+/* ─── Card ───────────────────────────────────────────────────────────────────── */
+.ref-card {
+  width: var(--card-w);
+  height: var(--card-h);
+  flex-shrink: 0;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 20px;
+  cursor: pointer;
+  transition: background 0.25s ease, border-color 0.25s ease,
+              box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.ref-card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: grayscale(1) brightness(0.75);
+  transition: filter 0.3s ease;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.ref-card:hover {
+  background: var(--card-hover);
+  border-color: rgba(79, 142, 247, 0.4);
+  box-shadow: 0 0 24px var(--accent-glow), inset 0 0 12px rgba(79, 142, 247, 0.06);
+  transform: translateY(-2px);
+}
+
+.ref-card:hover img {
+  filter: grayscale(0) brightness(1);
+}
+
+/* ─── Stats strip ────────────────────────────────────────────────────────────── */
+.ref-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(1.5rem, 5vw, 4rem);
+  margin-top: clamp(2rem, 5vw, 3.5rem);
+  padding: 0 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.ref-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.ref-stat__value {
+  font-family: 'Syne', 'Georgia', serif;
+  font-weight: 800;
+  font-size: clamp(1.4rem, 3.5vw, 2rem);
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.ref-stat__label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.ref-stat-sep {
+  width: 1px;
+  height: 32px;
+  background: linear-gradient(to bottom, transparent, var(--card-border), transparent);
+}
+
+/* ─── Keyframes ──────────────────────────────────────────────────────────────── */
+@keyframes scroll-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(calc(-1 * (var(--belt-w) + var(--gap)))); }
+}
+
+@keyframes scroll-right {
+  0%   { transform: translateX(calc(-1 * (var(--belt-w) + var(--gap)))); }
+  100% { transform: translateX(0); }
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  :host {
+    --card-w: 120px;
+    --card-h: 60px;
+    /* Recalculate belt-w for smaller cards: 19 × (120 + 20) = 2660px */
+    --belt-w: 2660px;
+  }
+
+  .ref-card {
+    padding: 12px 14px;
+    border-radius: 8px;
+  }
+
+  .ref-track--left  .ref-belt { animation-duration: 24s; }
+  .ref-track--right .ref-belt { animation-duration: 28s; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ref-belt { animation: none !important; }
+}
