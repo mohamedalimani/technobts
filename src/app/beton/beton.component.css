@@ -3,4 +3,3 @@
 .section-title-label span { display: inline-block; width: 28px; height: 1.5px; background: #1D9E75; border-radius: 2px; }
 .section-title-text { font-size: 22px; font-weight: 500; color: #212529; margin: 0; display: flex; align-items: center; gap: 10px; }
 .section-title-text img { width: 26px; height: 26px; object-fit: contain; }
-.section-title-underline { width: 48px; height: 3px; background: #1D9E75; border-radius: 2px; }

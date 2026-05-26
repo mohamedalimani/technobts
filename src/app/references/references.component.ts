@@ -19,7 +19,7 @@ export class ReferencesComponent implements OnInit {
     'assets/references/azurcity.jpg',
     'assets/references/bic.png',
     'assets/references/decathlon.png',
-    'assets/references/delice.png',
+    'assets/references/delice.jpg',
     'assets/references/ect.png',
     'assets/references/galpharma.png',
     'assets/references/geant.png',
