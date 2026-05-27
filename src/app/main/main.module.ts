@@ -1,0 +1,19 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterLink, RouterModule, Routes } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+
+const routes:Routes=[
+  {path:'navbar', component:NavbarComponent},
+  {path:'footer', component:FooterComponent},
+]
+
+@NgModule({
+  declarations: [NavbarComponent, FooterComponent],
+  imports: [
+    CommonModule, RouterModule.forChild(routes), RouterLink
+  ],
+  exports:[NavbarComponent, FooterComponent]
+})
+export class MainModule { }

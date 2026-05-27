@@ -17,7 +17,7 @@
                     <h5 class="card-title title">{{project.title}}</h5>
                     <p class="card-text text flex-grow-1">{{project.description}}</p>
                     <p class="card-text text mt-auto"><small class="text-muted">{{project.date}}</small></p>
-                    <a [routerLink]="'/project/'+project.id" class="ms-1 link">En savoir plus </a>
+                    <a [routerLink]="project.id" class="ms-1 link">En savoir plus </a>
                 </div>
             </div>
         </div>

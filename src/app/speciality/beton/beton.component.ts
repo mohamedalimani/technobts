@@ -2,8 +2,6 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-beton',
-  standalone: true,
-  imports: [],
   templateUrl: './beton.component.html',
   styleUrl: './beton.component.css'
 })

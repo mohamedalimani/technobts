@@ -1,16 +1,14 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { TechnoService } from '../techno.service';
+import { Component, Input } from '@angular/core';
+import { TechnoService } from '../../techno.service';
 
 @Component({
   selector: 'app-project',
-  standalone: true,
-  imports: [],
   templateUrl: './project.component.html',
   styleUrl: './project.component.css'
 })
-export class ProjectComponent implements OnInit {
-  
-  @Input() id!: number;
+export class ProjectComponent {
+
+@Input() id!: number;
   project:any;
   
   constructor(private ts:TechnoService){}

@@ -1,23 +1,21 @@
-import { Component, OnInit } from '@angular/core';
-import { TechnoService } from '../techno.service';
+import { Component } from '@angular/core';
 import { RouterLink } from "@angular/router";
+import { TechnoService } from '../../techno.service';
 
 @Component({
   selector: 'app-projects',
-  standalone: true,
-  imports: [RouterLink],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css'
 })
-export class ProjectsComponent implements OnInit {
+export class ProjectsComponent {
 
   projects:any;
-
-  constructor(private ts:TechnoService){}
-
-  ngOnInit(): void {
-    this.getProjects();
-  }
+  
+    constructor(private ts:TechnoService){}
+  
+    ngOnInit(): void {
+      this.getProjects();
+    }
 
   getProjects(){
       this.ts.getProjects().subscribe({
@@ -29,5 +27,4 @@ export class ProjectsComponent implements OnInit {
         }
       })
   }
-
 }
