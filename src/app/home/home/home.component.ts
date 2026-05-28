@@ -1,16 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import { TechnoService } from '../techno.service';
-import { RouterLink } from "@angular/router";
+import { Component } from '@angular/core';
+import { TechnoService } from '../../techno.service';
 
 @Component({
   selector: 'app-home',
-  standalone: true,
-  imports: [RouterLink],
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrl: './home.component.css'
 })
-export class HomeComponent implements OnInit {
-  
+export class HomeComponent {
+
   projects: any;
   count:number=0;
   readonly initialCount = 4;
