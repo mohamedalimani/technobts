@@ -66,76 +66,61 @@
       <div class="sf-icon-wrap">
         <img src="assets/success.png" alt="">
       </div>
-      <div class="sf-value">99%</div>
+      <div class="sf-value text-nowrap">99%</div>
       <div class="sf-label">Projets livrés dans les délais</div>
     </div>
     <div class="sf-stat">
       <div class="sf-icon-wrap">
         <img src="assets/clock.png" alt="">
       </div>
-      <div class="sf-value">21 000+</div>
+      <div class="sf-value text-nowrap">21 000+</div>
       <div class="sf-label">Heures de travail sans accident</div>
     </div>
     <div class="sf-stat">
       <div class="sf-icon-wrap">
         <img src="assets/count.png" alt="">
       </div>
-      <div class="sf-value">23+</div>
+      <div class="sf-value text-nowrap">23+</div>
       <div class="sf-label">Projets réalisés avec succès</div>
     </div>
   </div>
 </div>
 
 <!--PROJECTS-->
-<div class="card-group row mb-3 position-relative">
+<div class="row p-2 position-relative ">
 
-    <div class="text-center mx-auto m-5">
-        <h4 class="title">REALISATIONS</h4>
-        <p class="title">
-            De la grande surface au bâtiment public, chaque dalle que nous posons est le reflet de notre engagement envers la durabilité 
-            et la précision. Découvrez quelques-uns de <span class="text-danger">nos chantiers réalisés</span> avec expertise.
-        </p>
-    </div>
+  @for (project of projects; track $index) {
+    <div class="col-12 col-md-3 p-0">
 
-    @for (project of projects; track $index) {
-        <div class="col-12 col-md-3 mt-2 p-0">
-            <a [routerLink]="'/project/'+project.id">
+      <div class="card">
+        <div class="position-relative">
+          <img [src]="project.dir + project.mainImg" class="card-img" style="height: 500px; object-fit: cover;" [alt]="project.title">
+          
+          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center text-white px-3 title">
+            <h5 class="card-title text-lg-nowrap project-title">{{ project.title }}</h5>
+            <p class="card-text text-center project-subtitle">{{ project.description }}</p>
+            <span class="project-subtitle">{{ project.date }}</span>
+          </div>
 
-                <div class="card border-0">
-                    <!-- Image + overlay wrapper -->
-                    <div class="card-img-wrapper">
-
-                    <img [src]="project.dir + project.mainImg" class="card-img vh-100"  [alt]="project.title">
-
-                    <!-- Dark overlay -->
-                    <div class="card-overlay"></div>
-
-                    <!-- Centered text on top -->
-                    <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center">
-                        <h5 class="card-title project-title">{{ project.title }}</h5>
-                        <p class="card-text mb-2 project-subtitle">{{ project.description }}</p>
-                        <small class="project-subtitle">{{ project.date }}</small>
-                    </div>
-
-                    </div>
-                </div>
-            </a>
         </div>
-    }
+      </div>
 
-    <div class="position-absolute p-0 bottom-0 w-100 opacity-75">
-
-            <div class="text-center mt-4">
-                <button class="btn btn-danger w-100 clip-wavy" style="height: 60px;">
-                    <a class="link text-white" routerLink="/projects">
-                        En savoir plus 
-                        <span class="badge text-bg-light">{{ count }}</span>
-                    </a>
-                </button>
-            </div>
-        
     </div>
+  }
 
+  <div class="position-absolute p-0 bottom-0 w-100 opacity-75">
+
+        <div class="text-center mt-4">
+            <button class="btn btn-danger w-100 clip-wavy" style="height: 60px;">
+                <a class="link text-white" routerLink="/projects">
+                    En savoir plus 
+                    <span class="badge text-bg-light">{{ count }}</span>
+                </a>
+            </button>
+        </div>
+        
+  </div>
+  
 </div>
 
 <app-faq></app-faq>

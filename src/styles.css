@@ -53,19 +53,6 @@ ul, p{
     font-family: 'text';
 }
 
-.project-title{
-    font-family: 'title';
-    font-size: 3rem;
-    color: #FFF;
-}
-
-.project-subtitle{
-    font-family: 'title';
-    font-size: 1rem;
-    color: #FFF;
-}
-
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     width: 3rem;
@@ -76,4 +63,13 @@ ul, p{
 .carousel-control-prev,
 .carousel-control-next {
     opacity: 1;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100%;
+    width: 100%;
 }

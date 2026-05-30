@@ -22,6 +22,24 @@
     }
 }
 
+.project-title{
+    font-family: 'title';
+    font-size: 1.4rem;
+    color: #FFF;
+}
+
+.project-subtitle{
+    font-family: 'title';
+    font-size: 1rem;
+    color: #FFF;
+}
+
+@media (min-width:1470px) {
+  .text-lg-nowrap {
+    white-space: nowrap !important;
+  }
+}
+
 .card-img-top {
   height: 500px;       /* fixed height for all images */
   object-fit: cover;    /* crops cleanly, no distortion */
@@ -188,12 +206,13 @@ a{
 }
 .sf-value {
   font-family: 'Syne', serif;
-  font-weight: 800;
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 600;
+  font-size: clamp(1.5rem, 4vw, 2rem);
   letter-spacing: -0.03em;
   line-height: 1;
   animation: countUp 0.6s ease both;
 }
+
 .sf-stat:nth-child(1) .sf-value { animation-delay: 0.1s; }
 .sf-stat:nth-child(2) .sf-value { animation-delay: 0.25s; }
 .sf-stat:nth-child(3) .sf-value { animation-delay: 0.4s; }
