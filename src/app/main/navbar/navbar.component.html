@@ -46,22 +46,28 @@
 
     <div class="collapse navbar-collapse" id="nbLinks">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+
         <li class="nav-item">
-          <a routerLink="" class="nb-link nav-link active" aria-current="page">Accueil</a>
+          <a routerLink="" (click)="menuSelect='main'" [ngClass]="menuSelect=='main' ? 'active':''" class="nb-link nav-link" aria-current="page">Accueil</a>
         </li>
+
+        <div class="nb-divider d-none d-lg-block" aria-hidden="true"></div>
+
+        <li class="nav-item">
+          <a routerLink="/speciality" (click)="menuSelect='spec'" [ngClass]="menuSelect=='spec' ? 'active':''" class="nb-link nav-link">Nos spécialités</a>
+        </li>
+
         <div class="nb-divider d-none d-lg-block" aria-hidden="true"></div>
         <li class="nav-item">
-          <a routerLink="/speciality" class="nb-link nav-link">Nos spécialités</a>
+          <a routerLink="/projects" (click)="menuSelect='projects'" [ngClass]="menuSelect=='projects' ? 'active':''" class="nb-link nav-link">Réalisations</a>
         </li>
-        <div class="nb-divider d-none d-lg-block" aria-hidden="true"></div>
+
         <li class="nav-item">
-          <a routerLink="/projects" class="nb-link nav-link">Réalisations</a>
+          <a routerLink="/references" (click)="menuSelect='ref'" [ngClass]="menuSelect=='ref' ? 'active':''" class="nb-link nav-link">References</a>
         </li>
+
         <li class="nav-item">
-          <a routerLink="/references" class="nb-link nav-link">References</a>
-        </li>
-        <li class="nav-item">
-          <a routerLink="contact" class="nb-cta nav-link">Contactez-nous</a>
+          <a routerLink="contact" (click)="menuSelect='contact'" [ngClass]="menuSelect=='contact' ? 'active':''" class="nb-cta nav-link">Contactez-nous</a>
         </li>
       </ul>
     </div>
