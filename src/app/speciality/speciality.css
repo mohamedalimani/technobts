@@ -1,0 +1,40 @@
+.avantages-title { 
+    font-size: 18px; 
+    font-weight: 500; 
+    letter-spacing: 0.08em; 
+    color: #3B6D11; 
+    text-transform: uppercase; 
+}
+
+.adv-list { 
+    list-style: none; 
+    padding: 0; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 8px; 
+}
+.adv-item { 
+    display: flex; 
+    align-items: flex-start; 
+    gap: 10px; 
+    background: #eaf3de; 
+    border: 0.5px solid #97c459; 
+    border-radius: 8px; 
+    padding: 8px 12px; 
+    font-size: 14px; 
+    color: #27500a; 
+    cursor: pointer; 
+    transition: background 0.25s, 
+    border-color 0.25s, 
+    transform 0.15s; 
+}
+.adv-item:hover { 
+    background: #c0dd97; 
+    border-color: #60a50d; 
+    transform: translateX(3px); 
+}
+.adv-item i { 
+    font-size: 17px; 
+    color: #3B6D11; 
+    flex-shrink: 0; 
+}

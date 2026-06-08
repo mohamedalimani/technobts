@@ -1,16 +1,14 @@
 <!-- HERO -->
 <div class="overflow-hidden">
 	<div class="container-fluid col-xxl-8">
+    
 		<div class="row flex-lg-nowrap align-items-center g-5">
 
-			<div class="order-lg-1 w-100 p-0">
-				<img style="clip-path: polygon(25% 0%, 100% 0%, 100% 99%, 0% 100%);" src="assets/hero.jpg" class="d-block mx-lg-auto img-fluid" alt="Photo by Milad Fakurian" loading="lazy" srcset="" >
-			</div>
+			<div class="col-lg-6 col-xl-5 text-center text-lg-start pt-lg-5 mt-xl-4 order-2 order-sm-1">
 
-			<div class="col-lg-6 col-xl-5 text-center text-lg-start pt-lg-5 mt-xl-4">
 				<div class="lc-block mb-4">
 					<div editable="rich">
-						<h1 class="fw-bold display-3">Dallage industriel leader en Tunisie</h1>
+						<h1 class="fw-bold display-3">Dallage industriel <span class="shine">leader</span> en Tunisie</h1>
 					</div>
 				</div>
 
@@ -20,7 +18,7 @@
 					</div>
 				</div>
 
-				<div class="lc-block mb-6"><a class="btn btn-danger px-4 me-md-2 btn-lg" href="#" role="button">Contactez-nous</a>
+				<div class="lc-block mb-6"><a class="btn btn-danger px-4 me-md-2 btn-lg" routerLink="/contact" role="button">Contactez-nous</a>
 				</div>
 
 				<div class="lc-block">
@@ -36,58 +34,31 @@
 					<div class="lc-block col-2"><img class="img-fluid wp-image-967" src="assets/references/decathlon.png" width="70px" height="300"></div>
 					<div class="lc-block col-2"><img class="img-fluid wp-image-967" src="assets/references/astral.png" width="70px" height="300"></div>
 				</div>
+
+			</div>
+
+      <div class="col-12 col-lg-6 p-0 w-100 order-1 order-md-2">
+				<img src="assets/hero.jpg" class="d-block img-fluid w-100 hero-img" alt="Photo by Milad Fakurian" loading="lazy" srcset="" >
 			</div>
 
 		</div>
 	</div>
 </div>
- 
-<!-- STATS -->
-<div class="sf-card">
-  <div class="sf-texture"></div>
-
-  <div class="sf-header">
-    <div class="sf-eyebrow">
-      <span class="sf-eyebrow-line"></span>
-      Expertise &amp; excellence
-      <span class="sf-eyebrow-line"></span>
-    </div>
-    <h2 class="sf-title">Notre Savoir-Faire en Données</h2>
-    <p class="sf-subtitle">
-      Chaque projet réalisé témoigne de notre savoir-faire, de notre rigueur
-      et de notre engagement envers la qualité.
-    </p>
-  </div>
-
-  <div class="sf-divider"><div class="sf-divider-dot"></div></div>
-
-  <div class="sf-stats">
-    <div class="sf-stat">
-      <div class="sf-icon-wrap">
-        <img src="assets/success.png" alt="">
-      </div>
-      <div class="sf-value text-nowrap">99%</div>
-      <div class="sf-label">Projets livrés dans les délais</div>
-    </div>
-    <div class="sf-stat">
-      <div class="sf-icon-wrap">
-        <img src="assets/clock.png" alt="">
-      </div>
-      <div class="sf-value text-nowrap">21 000+</div>
-      <div class="sf-label">Heures de travail sans accident</div>
-    </div>
-    <div class="sf-stat">
-      <div class="sf-icon-wrap">
-        <img src="assets/count.png" alt="">
-      </div>
-      <div class="sf-value text-nowrap">23+</div>
-      <div class="sf-label">Projets réalisés avec succès</div>
-    </div>
-  </div>
-</div>
 
 <!--PROJECTS-->
-<div class="row p-2 position-relative ">
+<div class="row p-2 my-5 position-relative">
+
+  <div class="row text-center h-25">
+      <h2 class="title text-uppercase">
+        Nos Projets
+      </h2>
+  
+      <p class="text">
+        "Découvrez nos réalisations — des pipelines de données aux tableaux de bord 
+        intelligents, chaque projet reflète notre engagement à transformer des données 
+        complexes en insights clairs et exploitables."
+      </p>
+    </div>
 
   @for (project of projects; track $index) {
     <div class="col-12 col-md-3 p-0">
@@ -108,10 +79,10 @@
     </div>
   }
 
-  <div class="position-absolute p-0 bottom-0 w-100 opacity-75">
+  <div class="position-absolute p-0 bottom-0 w-100">
 
         <div class="text-center mt-4">
-            <button class="btn btn-danger w-100 clip-wavy" style="height: 60px;">
+            <button class="btn w-100 clip-wavy savoir-btn">
                 <a class="link text-white" routerLink="/projects">
                     En savoir plus 
                     <span class="badge text-bg-light">{{ count }}</span>
@@ -121,6 +92,68 @@
         
   </div>
   
+</div>
+
+<!--STATS-->
+<div class="container my-5" style="min-height: 50vh;" #stat>
+
+  <!--STATS-header-->
+  <div class="row text-center h-25">
+    <h2 class="title text-uppercase">
+      Expertise &amp; excellence
+    </h2>
+    <h5 class="title">Notre Savoir-Faire en Données</h5>
+    <p class="text">
+      "Chaque projet réalisé témoigne de notre savoir-faire, de notre rigueur
+      et de notre engagement envers la qualité."
+    </p>
+  </div>
+
+  <div class="row h-75 align-items-stretch">
+    <!--STATS-COL-->
+    <div class="col-12 col-lg-4 p-2" style="min-height: 350px;">
+      <div class="card h-100">
+        <div class="row g-0 h-100">
+          <div class="col-12 col-md-6 bg-danger d-flex justify-content-center align-items-center shiny-box">
+            <i class="bi bi-check-circle" style="font-size: 3rem; color: aliceblue;"></i>
+          </div>
+          <div class="col-12 col-md-6 text-center d-flex flex-column justify-content-center">
+              <h1 class="title text-danger">{{perCount}}%</h1>
+              <h6 class="title">Projets livrés dans les délais.</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--STATS-COL-->
+    <div class="col-12 col-lg-4 p-2" style="min-height: 350px;">
+      <div class="card h-100">
+        <div class="row g-0 h-100">
+          <div class="col-12 col-md-6 bg-warning d-flex justify-content-center align-items-center shiny-box">
+            <i class="bi bi-clock" style="font-size: 3rem; color: aliceblue;"></i>
+          </div>
+          <div class="col-12 col-md-6 text-center d-flex flex-column justify-content-center">
+              <h1 class="title text-warning">{{durationCount}}+</h1>
+              <h6 class="title">Heures de travail sans accident</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--STATS-COL-->
+    <div class="col-12 col-lg-4 p-2" style="min-height: 350px;">
+      <div class="card h-100">
+        <div class="row g-0 h-100">
+          <div class="col-12 col-md-6 bg-dark d-flex justify-content-center align-items-center shiny-box">
+            <i class="bi bi-bar-chart" style="font-size: 3rem; color: aliceblue;"></i>
+          </div>
+          <div class="col-12 col-md-6 text-center d-flex flex-column justify-content-center">
+              <h1 class="title">{{pjtCount}}+</h1>
+              <h6 class="title">Projets réalisés avec succès</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <app-faq></app-faq>

@@ -52,9 +52,18 @@
 
 .clip-wavy {
   clip-path: polygon(
-    0% 20%, 50% 15%, 100% 20%,
+    0% 50%, 50% 15%, 100% 20%,
     100% 100%, 50% 100%, 0% 100%
   );
+}
+
+.savoir-btn{
+  height: 60px;
+  background-color:#c42727; 
+}
+
+.savoir-btn:hover{
+  background-color:#8B0000; 
 }
 
 .card {
@@ -78,7 +87,6 @@
 a{
   text-decoration: none;
 }
-
 
 /* — add Google Fonts to index.html —
    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet"> */
@@ -228,9 +236,73 @@ a{
   from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-@media (max-width: 480px) {
+@media (max-width: 991px) {
   .sf-card { padding: 2rem 1.25rem 1.75rem; }
   .sf-stats { grid-template-columns: 1fr; }
   .sf-stat { flex-direction: row; text-align: left; gap: 16px; padding: 1.25rem 1rem; }
   .sf-label { max-width: none; }
+  .hero-img{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+
+@media (min-width: 991px)  {
+  .hero-img{
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+
+.shine {
+  animation: pulse-red 7s ease-in-out infinite;
+}
+
+@keyframes pulse-red {
+  0%   { color: #e20000; }
+  25%  { color: #000000;}
+  50%  { color: #e20000;}
+  75%  { color: #000000;}
+  100% { color: #e20000; }
+}
+
+.onStat {
+  opacity: 1; /* ✅ becomes visible when class is added */
+}
+
+.shiny-box{
+  overflow: hidden;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+/* The Shine Effect Layer */
+.shiny-box::before{
+  content:'';
+  position: absolute;
+  left:-150%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  animation: shineLoop 3s infinite ease-in-out;
+}
+
+.shiny-box:hover::before{
+  left:150%;
+}
+
+@keyframes shineLoop {
+  0% {
+    left: -150%;
+  }
+  50% {
+    left: 150%;
+  }
+  100% {
+    left: 150%; /* Delays the reset back to the start */
+  }
 }

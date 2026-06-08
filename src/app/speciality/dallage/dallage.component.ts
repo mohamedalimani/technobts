@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-dallage',
   templateUrl: './dallage.component.html',
-  styleUrl: './dallage.component.css'
+  styleUrls: ['./dallage.component.css', './../speciality.css']
 })
 export class DallageComponent {
   dallageDir='assets/more/dallage industriel/'

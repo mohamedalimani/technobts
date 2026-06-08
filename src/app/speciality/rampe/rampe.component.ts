@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-rampe',
   templateUrl: './rampe.component.html',
-  styleUrl: './rampe.component.css'
+  styleUrls:['./rampe.component.css', './../speciality.css']
 })
 export class RampeComponent {
   rampeDir=['assets/more/rampe/']

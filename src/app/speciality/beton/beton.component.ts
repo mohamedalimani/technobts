@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-beton',
   templateUrl: './beton.component.html',
-  styleUrl: './beton.component.css'
+  styleUrls:['./beton.component.css', './../speciality.css']
 })
 export class BetonComponent {
   estampDir='assets/more/bétons décoratifs/beton estampé/';
