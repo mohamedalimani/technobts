@@ -1,20 +1,21 @@
 <div class="container mt-4 mb-4">
   <div class="row">
 
-    <div class="col-12 col-md-7">
-      <img class="show" height="70%" width="100%" [src]="project?.dir + project?.mainImg" [alt]="project?.title">
+    <div class="col-12 col-md-6">
+      <img class="show" height="600px" width="100%" [src]="project?.dir + project?.mainImg" [alt]="project?.title">
     </div>
 
-    <div class="col-12 col-md-5 d-flex flex-column show">
+    <div class="col-12 col-md-6 d-flex flex-column show">
       <!-- First row: title -->
-      <div class="row">
+      <div class="row mt-4">
         <h1 class="title">{{ project?.title }}</h1>
+        <p class="title">{{project.date}}</p>
       </div>
 
       <div class="row mt-auto">
 
         <div class="col-12 col-md-6">
-          <span class="title text-danger">[à propos du projet]</span>
+          <span class="title">à propos du projet</span>
           <p class="text">{{ project?.description }}</p>
         </div>
 
