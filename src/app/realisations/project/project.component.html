@@ -9,7 +9,7 @@
       <!-- First row: title -->
       <div class="row mt-4">
         <h1 class="title">{{ project?.title }}</h1>
-        <p class="title">{{project.date}}</p>
+        <p class="title">{{project?.date}}</p>
       </div>
 
       <div class="row mt-auto">
@@ -17,6 +17,14 @@
         <div class="col-12 col-md-6">
           <span class="title">à propos du projet</span>
           <p class="text">{{ project?.description }}</p>
+          <!--ADVANTAGE-->
+          <!-- Replace the speciality section with this -->
+          <span class="title">Spécialités utilisées</span>
+          <div class="speciality-tags mb-3">
+            @for (spec of project?.speciality; track $index) {
+              <span class="spec-tag">{{ spec }}</span>
+            }
+          </div>
         </div>
 
         <div class="col-12 col-md-6 d-flex flex-column align-items-center slide-up-col">            

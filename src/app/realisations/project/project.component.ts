@@ -8,7 +8,7 @@ import { TechnoService } from '../../techno.service';
 })
 export class ProjectComponent {
 
-@Input() id!: number;
+  @Input() id!: number;
   project:any;
   
   constructor(private ts:TechnoService){}

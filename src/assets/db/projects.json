@@ -6,7 +6,8 @@
     "description": "Projet de rénovation et d’aménagement de l’aéroport de Tozeur avec modernisation des espaces d’accueil et des infrastructures techniques.",
     "mainImg": "/1.jpg",
     "secondaryImg": ["/2.jpg", "/3.jpg"],
-    "date": "14 Mars 2019"
+    "date": "14 Mars 2019",
+    "speciality":["Travaux de réhabilitation des infrastructure de l'aérodrome de Tozeur"]
   },
   {
     "id":2,
@@ -15,7 +16,8 @@
     "description": "Construction d’un centre commercial moderne à Sfax intégrant des espaces commerciaux, de restauration et de loisirs.",
     "mainImg": "/1.jpg",
     "secondaryImg": ["/2.jpg", "/3.jpg"],
-    "date": "22 Novembre 2020"
+    "date": "22 Novembre 2020",
+    "speciality":["Protection lourde"]
   },
   {
     "id":3,
@@ -24,7 +26,8 @@
     "description": "Réalisation d’une résidence résidentielle haut standing à Nabeul avec architecture contemporaine et espaces verts.",
     "mainImg": "/1.jpg",
     "secondaryImg": ["/2.jpg", "/3.jpg"],
-    "date": "09 Juillet 2021"
+    "date": "09 Juillet 2021",
+    "speciality":["Unkown"]
   },
   {
     "id":4,
@@ -33,7 +36,8 @@
     "description": "Développement d’un complexe immobilier à Monastir comprenant des appartements modernes et des équipements collectifs.",
     "mainImg": "/1.jpg",
     "secondaryImg": ["/3.jpg", "/4.jpg", "/5.jpg"],
-    "date": "30 Janvier 2022"
+    "date": "30 Janvier 2022",
+    "speciality":["Unkown"]
   },
   {
     "id":5,
@@ -42,52 +46,58 @@
     "description": "Aménagement d’un site industriel pour le groupe Toray avec optimisation des espaces de production et de stockage.",
     "mainImg": "/1.jpg",
     "secondaryImg": ["/2.jpg", "/3.jpg"],
-    "date": "18 Septembre 2023"
+    "date": "18 Septembre 2023",
+    "speciality":["Unkown"]
   },
   {
     "id":6,
     "dir": "assets/projects/project-0",
-    "title": "TOUR SKYLINE",
-    "description": "Construction d’une tour de bureaux moderne avec façades vitrées, espaces de coworking et parkings souterrains.",
+    "title": "UNKWON",
+    "description": "Étanchéité avec SP4 dans une usine industrielle : préparation des surfaces et application du système SP4 afin d'assurer une protection durable contre les infiltrations d'eau et de renforcer la durabilité des structures.",
     "mainImg": "/1.jpg",
     "secondaryImg": ["/2.jpg", "/3.jpg"],
-    "date": "12 Mai 2024"
+    "date": "12 Mai 2024",
+    "speciality":["Etanchéité avec SP4"]
   },
   {
     "id":7,
     "dir": "assets/projects/project-1",
-    "title": "COMPLEXE GREEN VALLEY",
-    "description": "Création d’un complexe résidentiel écologique intégrant des solutions d’économie d’énergie et des jardins paysagers.",
+    "title": "Usine Manzel nour",
+    "description": "réalisation d'un dallage industriel haute résistance adapté aux contraintes de circulation, de charge et d'exploitation, garantissant durabilité, stabilité et performance des surfaces de travail.",
     "mainImg": "/1.jpg",
     "secondaryImg": ["/2.jpg", "/3.jpg"],
-    "date": "03 Décembre 2025"
+    "date": "03 Décembre 2025",
+    "speciality":["Dallage industriel"]
   },
   {
     "id":8,
     "dir": "assets/projects/project-2",
-    "title": "CENTRE D’AFFAIRES OASIS",
-    "description": "Réalisation d’un centre d’affaires offrant des bureaux modernes, salles de réunion et espaces professionnels flexibles.",
+    "title": "SEBN JENDOUBA",
+    "description": "mise en œuvre d'un sol en béton robuste conçu pour supporter les équipements lourds, le trafic intensif et les exigences opérationnelles d'un environnement industriel.",
     "mainImg": "/1.jpg",
     "secondaryImg": ["/2.jpg", "/3.jpg"],
-    "date": "27 Août 2019"
+    "date": "27 Août 2019",
+    "speciality":["Dallage industriel"]
   },
   {
     "id":9,
     "dir": "assets/projects/project-3",
-    "title": "SUNSET PLAZA",
-    "description": "Développement d’un espace commercial et résidentiel combinant boutiques, cafés et appartements haut de gamme.",
+    "title": "Immeuble à Monastir",
+    "description": "mise en œuvre d’un système d’étanchéité par cuvelage dans les parties enterrées d’un immeuble afin de protéger contre les infiltrations d’eau et la pression du sol, garantissant la durabilité et la sécurité des fondations et sous-sols.",
     "mainImg": "/1.jpg",
     "secondaryImg": ["/2.jpg", "/3.jpg"],
-    "date": "16 Avril 2020"
+    "date": "16 Avril 2020",
+    "speciality":["Cuvelage traditionnel"]
   },
   {
     "id":10,
     "dir": "assets/projects/project-4",
-    "title": "CRYSTAL HEIGHTS",
-    "description": "Projet immobilier résidentiel avec design contemporain, terrasses panoramiques et équipements de loisirs privés.",
+    "title": "Draexlmaier Jammel",
+    "description": "réalisation d’un dallage en béton haute performance adapté aux exigences industrielles du site Draexlmaier, assurant une surface résistante aux charges lourdes, au trafic intensif et aux contraintes de production, tout en garantissant durabilité et planéité optimale.",
     "mainImg": "/1.jpg",
     "secondaryImg": ["/2.jpg", "/3.jpg"],
-    "date": "05 Octobre 2021"
+    "date": "05 Octobre 2021",
+    "speciality":["Dallage industriel"]
   },
   {
     "id":11,
@@ -96,6 +106,7 @@
     "description": "Construction d’un ensemble de villas modernes avec piscines privées et finitions architecturales premium.",
     "mainImg": "/1.jpg",
     "secondaryImg": [],
-    "date": "21 Juin 2022"
+    "date": "21 Juin 2022",
+    "speciality":["Dallage industriel"]
   }
 ]

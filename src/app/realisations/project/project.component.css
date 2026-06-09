@@ -65,3 +65,25 @@ img.show {
   object-fit: cover;
   border: 0.5px solid #c0dd97;
 }
+
+/* Speciality Tags */
+.speciality-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.spec-tag {
+  display: inline-block;
+  background-color: #eef5e4;
+  color: #3B6D11;
+  border: 1px solid #c0dd97;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  line-height: 1.4;
+}
