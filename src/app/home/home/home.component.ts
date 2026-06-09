@@ -40,7 +40,7 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy{
           observer.disconnect();
         }
       },
-      {threshold:0.3}
+      {threshold:1}
     );
     observer.observe(this.stat.nativeElement);
   }
