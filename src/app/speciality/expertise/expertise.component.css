@@ -1,0 +1,60 @@
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes lineGrow {
+  from { width: 0; }
+  to   { width: 56px; }
+}
+
+.spec-section {
+  max-width: 680px;
+}
+
+.spec-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #3B6D11;
+  margin-bottom: 0.75rem;
+  animation: fadeUp 0.6s ease both;
+}
+
+.spec-line {
+  display: block;
+  height: 1px;
+  background: #c0dd97;
+  animation: lineGrow 0.7s 0.3s ease both;
+}
+
+.spec-title {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #1a1a1a;
+  margin-bottom: 0.85rem;
+  opacity: 0;
+  animation: fadeUp 0.7s 0.2s ease forwards;
+}
+
+.spec-divider {
+  width: 40px;
+  height: 3px;
+  background: #639922;
+  border-radius: 2px;
+  margin: 0 auto 1.1rem;
+  animation: lineGrow 0.6s 0.5s ease both;
+}
+
+.spec-body {
+  font-size: 14.5px;
+  line-height: 1.85;
+  color: #888780;
+  opacity: 0;
+  animation: fadeUp 0.9s 0.45s ease forwards;
+}

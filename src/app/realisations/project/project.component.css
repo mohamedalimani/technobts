@@ -87,3 +87,17 @@ img.show {
   padding: 4px 10px;
   line-height: 1.4;
 }
+
+@media (width >= 600px) {
+  .mainImg{
+    height: 600px;
+    width: 100%;
+  }
+}
+
+@media (width < 600px) {
+  .mainImg{
+    height: 400px;
+    width: 100%;
+  }
+}
