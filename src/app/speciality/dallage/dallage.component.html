@@ -67,12 +67,13 @@
 
                 <div class="card-body d-flex flex-column gap-2">
                     <h5 class="beton-title mb-1">Joint cosinus</h5>
-                    <p class="text-secondary small mb-0">
+                    <p class="text-secondary small mb-0 expandable-text collapsed">
                         Le joint cosinus est un système de joint utilisé dans le dallage industriel.
                         Sa forme ondulée (en forme de cosinus) permet de mieux répartir les
                         charges lors du passage des roues et limite les vibrations ainsi que
                         l'usure des bords du béton.
                     </p>
+                    <button class="see-more-btn" (click)="toggleText($event)">voir plus</button>
 
                     <!-- Sub-cards row -->
                     <div class="row g-2 mt-1">
@@ -83,10 +84,11 @@
                                 <img src="assets/more/dallage industriel/techniques/joint cosinus/slide/1.jpg" class="card-img-top" style="height: 120px; object-fit: cover;" alt="sub image 1">
                                 <div class="card-body p-2 d-flex flex-column gap-1">
                                     <h6 class="card-title mb-0" style="font-size: 0.8rem;">slide</h6>
-                                    <p class="text-secondary mb-0" style="font-size: 0.75rem;">
+                                    <p class="text-secondary mb-0 expandable-text collapsed" style="font-size: 0.75rem;">
                                         Le joint cosinus Slide assure une transition fluide entre les dalles, réduit les chocs des 
                                         engins et améliore le confort de roulement. Idéal pour les zones à fort trafic logistique.
                                     </p>
+                                    <button class="see-more-btn" (click)="toggleText($event)">voir plus</button>
                                 </div>
                             </div>
                         </div>
@@ -97,11 +99,12 @@
                                 <img src="assets/more/dallage industriel/techniques/joint cosinus/e-slide/1.jpg" class="card-img-top" style="height: 120px; object-fit: cover;" alt="sub image 2">
                                 <div class="card-body p-2 d-flex flex-column gap-1">
                                     <h6 class="card-title mb-0" style="font-size: 0.8rem;">E-slide</h6>
-                                    <p class="text-secondary mb-0" style="font-size: 0.75rem;">
+                                    <p class="text-secondary mb-0 expandable-text collapsed" style="font-size: 0.75rem;">
                                         Le joint cosinus Slide assure une transition fluide entre les dalles tout en absorbant les mouvements 
                                         du béton. Il réduit les chocs des engins et améliore le confort de roulement dans les zones à fort 
                                         trafic logistique.
                                     </p>
+                                    <button class="see-more-btn" (click)="toggleText($event)">voir plus</button>
                                 </div>
                             </div>
                         </div>
@@ -128,13 +131,14 @@
 
                 <div class="card-body d-flex flex-column gap-2">
                     <h5 class="beton-title mb-1">Treillis soudés</h5>
-                    <p class="text-secondary small mb-0">
+                    <p class="text-secondary small mb-0 expandable-text collapsed">
                         Le trait soudé est une technique utilisée dans le dallage industriel pour assembler deux parties de 
                         béton à l’aide de profils métalliques soudés.
                         Il permet de renforcer les zones de jonction, d’assurer une meilleure stabilité de la dalle et de 
                         limiter les déformations causées 
                         par les charges lourdes et les passages répétés.
                     </p>
+                    <button class="see-more-btn" (click)="toggleText($event)">voir plus</button>
                     <div class="mt-auto pt-2 border-top d-flex gap-2 flex-wrap">
                         <span class="badge bg-light text-secondary border">Haute Résistance</span>
                         <span class="badge bg-light text-secondary border">Structure Renforcée</span>
@@ -154,9 +158,10 @@
 
                 <div class="card-body d-flex flex-column gap-2">
                     <h5 class="beton-title mb-1">Fibre Métallique</h5>
-                    <p class="text-secondary small mb-0">
+                    <p class="text-secondary small mb-0 expandable-text collapsed">
                         Le dallage industriel avec fibres métalliques est une solution robuste et performante conçue pour renforcer la résistance mécanique des surfaces en béton. Grâce à l’intégration de fibres métalliques dans le mélange, ce type de dallage offre une meilleure résistance aux charges lourdes, aux chocs, aux fissurations et à l’usure, ce qui le rend idéal pour les entrepôts, usines, parkings et zones industrielles à forte circulation.
                     </p>
+                    <button class="see-more-btn" (click)="toggleText($event)">voir plus</button>
                     <div class="mt-auto pt-2 border-top d-flex gap-2 flex-wrap">
                         <span class="badge bg-light text-secondary border">Haute Résistance</span>
                         <span class="badge bg-light text-secondary border">Anti Fissuration</span>
@@ -176,8 +181,10 @@
 
                 <div class="card-body d-flex flex-column gap-2">
                     <h5 class="beton-title mb-1">Fibre Synthétique</h5>
-                    <p class="text-secondary small mb-0">
-                        Le dallage industriel avec fibres synthétiques est une solution moderne qui améliore la résistance du béton tout en limitant les fissurations liées au retrait et aux contraintes mécaniques. Légeres et performantes, les fibres synthétiques renforcent la durabilité des surfaces et conviennent parfaitement aux zones industrielles et aux ouvrages nécessitant une protection durable.                    </p>
+                    <p class="text-secondary small mb-0 expandable-text collapsed">
+                        Le dallage industriel avec fibres synthétiques est une solution moderne qui améliore la résistance du béton tout en limitant les fissurations liées au retrait et aux contraintes mécaniques. Légeres et performantes, les fibres synthétiques renforcent la durabilité des surfaces et conviennent parfaitement aux zones industrielles et aux ouvrages nécessitant une protection durable.
+                    </p>
+                    <button class="see-more-btn" (click)="toggleText($event)">voir plus</button>
                     <div class="mt-auto pt-2 border-top d-flex gap-2 flex-wrap">
                         <span class="badge bg-light text-secondary border">Solution Moderne</span>
                         <span class="badge bg-light text-secondary border">Protection DuBéton</span>

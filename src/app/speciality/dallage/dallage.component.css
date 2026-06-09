@@ -1,3 +1,35 @@
 .object-fit-cover{
     object-fit: cover;
 }
+
+.expandable-text.collapsed {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.expandable-text.expanded{
+    display: block;
+    overflow: visible;
+}
+
+.see-more-btn{
+    background:none;
+    border:none;
+    padding:0;
+    margin-top: 2px;
+    font-size:0.72rem;
+    font-weight: 500;
+    color:#3B6D11;
+    cursor: pointer;
+    letter-spacing: 0.03em;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: opacity 0.2s;
+}
+
+.see-more-btn:hover{
+    opacity: 0.7;
+}
