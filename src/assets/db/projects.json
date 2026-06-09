@@ -47,7 +47,7 @@
     "mainImg": "/1.jpg",
     "secondaryImg": ["/2.jpg", "/3.jpg"],
     "date": "18 Septembre 2023",
-    "speciality":["Unkown"]
+    "speciality":[]
   },
   {
     "id":6,
@@ -61,7 +61,7 @@
   },
   {
     "id":7,
-    "dir": "assets/projects/project-1",
+    "dir": "assets/projects/usine-manzel-nour",
     "title": "Usine Manzel nour",
     "description": "réalisation d'un dallage industriel haute résistance adapté aux contraintes de circulation, de charge et d'exploitation, garantissant durabilité, stabilité et performance des surfaces de travail.",
     "mainImg": "/1.jpg",
@@ -71,7 +71,7 @@
   },
   {
     "id":8,
-    "dir": "assets/projects/project-2",
+    "dir": "assets/projects/sebn",
     "title": "SEBN JENDOUBA",
     "description": "mise en œuvre d'un sol en béton robuste conçu pour supporter les équipements lourds, le trafic intensif et les exigences opérationnelles d'un environnement industriel.",
     "mainImg": "/1.jpg",
@@ -81,7 +81,7 @@
   },
   {
     "id":9,
-    "dir": "assets/projects/project-3",
+    "dir": "assets/projects/immeuble",
     "title": "Immeuble à Monastir",
     "description": "mise en œuvre d’un système d’étanchéité par cuvelage dans les parties enterrées d’un immeuble afin de protéger contre les infiltrations d’eau et la pression du sol, garantissant la durabilité et la sécurité des fondations et sous-sols.",
     "mainImg": "/1.jpg",
@@ -91,7 +91,7 @@
   },
   {
     "id":10,
-    "dir": "assets/projects/project-4",
+    "dir": "assets/projects/draexlmaier",
     "title": "Draexlmaier Jammel",
     "description": "réalisation d’un dallage en béton haute performance adapté aux exigences industrielles du site Draexlmaier, assurant une surface résistante aux charges lourdes, au trafic intensif et aux contraintes de production, tout en garantissant durabilité et planéité optimale.",
     "mainImg": "/1.jpg",
@@ -101,7 +101,7 @@
   },
   {
     "id":11,
-    "dir": "assets/projects/project-5",
+    "dir": "assets/projects/villas-horizon",
     "title": "VILLAS HORIZON",
     "description": "Construction d’un ensemble de villas modernes avec piscines privées et finitions architecturales premium.",
     "mainImg": "/1.jpg",
