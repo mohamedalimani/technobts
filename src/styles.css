@@ -29,6 +29,16 @@
     text-decoration: none;
 }
 
+.return-link{
+    font-family: 'link';
+    color: #000;
+}
+
+.return-link:hover{
+    font-family: 'link';
+    color: #777272;
+}
+
 .title{
     font-family: 'title';
     color: #000;
