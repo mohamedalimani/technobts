@@ -19,7 +19,9 @@
           <p class="text">{{ project?.description }}</p>
           <!--ADVANTAGE-->
           <!-- Replace the speciality section with this -->
-          <span class="title">Spécialités utilisées</span>
+          @if(project?.speciality.length){
+            <span class="title">Spécialités utilisées</span>
+          }
           <div class="speciality-tags mb-3">
             @for (spec of project?.speciality; track $index) {
               <span class="spec-tag">{{ spec }}</span>

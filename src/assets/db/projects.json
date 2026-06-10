@@ -27,7 +27,7 @@
     "mainImg": "/1.jpg",
     "secondaryImg": ["/2.jpg", "/3.jpg"],
     "date": "09 Juillet 2021",
-    "speciality":["Unkown"]
+    "speciality":[]
   },
   {
     "id":4,
@@ -35,9 +35,9 @@
     "title": "PALAIS PRÉSIDENTIEL MONASTIR",
     "description": "Développement d’un complexe immobilier à Monastir comprenant des appartements modernes et des équipements collectifs.",
     "mainImg": "/1.jpg",
-    "secondaryImg": ["/2.jpg", "/3.jpg", "/4.jpg"],
+    "secondaryImg": ["/2.png", "/3.jpg", "/4.jpg"],
     "date": "30 Janvier 2022",
-    "speciality":["Unkown"]
+    "speciality":["Béton estampé"]
   },
   {
     "id":5,
@@ -48,16 +48,6 @@
     "secondaryImg": ["/2.jpg", "/3.jpg"],
     "date": "18 Septembre 2023",
     "speciality":[]
-  },
-  {
-    "id":6,
-    "dir": "assets/projects/project-0",
-    "title": "UNKWON",
-    "description": "Étanchéité avec SP4 dans une usine industrielle : préparation des surfaces et application du système SP4 afin d'assurer une protection durable contre les infiltrations d'eau et de renforcer la durabilité des structures.",
-    "mainImg": "/1.jpg",
-    "secondaryImg": ["/2.jpg", "/3.jpg"],
-    "date": "12 Mai 2024",
-    "speciality":["Etanchéité avec SP4"]
   },
   {
     "id":7,
