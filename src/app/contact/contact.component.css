@@ -116,3 +116,8 @@
 .hours-table .day { font-size: 13px; font-weight: 500; color: #212529; }
 .hours-table .time { font-size: 13px; color: #6c757d; }
 .hours-table .closed { color: #dc3545; }
+
+.invalid-form{
+  opacity: 0.2;
+  background-color: #6c757d;
+  cursor: not-allowed;
