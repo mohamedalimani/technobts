@@ -1,69 +1,55 @@
-#hero{
-    position: relative;
-    margin: 0 auto;
-    width: 900px;
-    height: 600px;
-    background-image: url(../../../assets/hero.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
+#hero {
+  position: relative;
+  margin: 0 auto;
+  width: 900px;
+  height: 600px;
+  background-image: url(../../../assets/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
 
-    #A{
-        position: absolute;
-        top: 7%;
-        left: 3%;
-        color:#FFF;
-    }
+  #A {
+    position: absolute;
+    top: 7%;
+    left: 3%;
+    color: #fff;
+  }
 
-    #B{
-        position: absolute;
-        bottom: 0;
-        right: 3%;
-        color:#FFF;
-    }
-}
-
-.project-title{
-    font-family: 'title';
-    font-size: 1.4rem;
-    color: #FFF;
-}
-
-.project-subtitle{
-    font-family: 'title';
-    font-size: 1rem;
-    color: #FFF;
-}
-
-@media (min-width:1470px) {
-  .text-lg-nowrap {
-    white-space: nowrap !important;
+  #B {
+    position: absolute;
+    bottom: 0;
+    right: 3%;
+    color: #fff;
   }
 }
 
+.project-title {
+  font-family: 'title';
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.project-subtitle {
+  font-family: 'title';
+  font-size: 1rem;
+  color: #fff;
+}
+
+@media (min-width: 1470px) {
+  .text-lg-nowrap { white-space: nowrap !important; }
+}
+
 .card-img-top {
-  height: 500px;       /* fixed height for all images */
-  object-fit: cover;    /* crops cleanly, no distortion */
+  height: 500px;
+  object-fit: cover;
   width: 100%;
 }
 
-.card-group{
-    margin: auto;
-}
+.card-group { margin: auto; }
 
-.clip-wavy {
-  clip-path: polygon(
-    0% 50%, 50% 15%, 100% 20%,
-    100% 100%, 50% 100%, 0% 100%
-  );
-}
-
-.savoir-btn{
+.savoir-btn {
   height: 60px;
-  background-color:#c42727; 
-}
-
-.savoir-btn:hover{
-  background-color:#8B0000; 
+  background-color: #c42727;
+  &:hover { background-color: #8b0000; }
 }
 
 .card {
@@ -72,50 +58,46 @@
 
   p, small {
     opacity: 0;
-    transform: translateY(12px);       /* start offset downward */
+    transform: translateY(12px);
     transition: opacity 0.3s ease, transform 0.3s ease;
   }
-}
 
-.card:hover {
-  p, small {
+  &:hover p, &:hover small {
     opacity: 1;
-    transform: translateY(0);          /* slide up into place */
+    transform: translateY(0);
   }
 }
 
-a{
-  text-decoration: none;
-}
-
-/* — add Google Fonts to index.html —
-   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet"> */
+a { text-decoration: none; }
 
 .sf-card {
   position: relative;
   overflow: hidden;
   border-radius: 4px;
-  background: #000000;
+  background: #000;
   padding: 3rem 2.5rem 2.5rem;
   color: #fff;
   margin: 2rem auto;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 220px; height: 220px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.06);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -40px; left: -40px;
+    width: 160px; height: 160px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.05);
+  }
 }
-.sf-card::before {
-  content: '';
-  position: absolute;
-  top: -60px; right: -60px;
-  width: 220px; height: 220px;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.06);
-}
-.sf-card::after {
-  content: '';
-  position: absolute;
-  bottom: -40px; left: -40px;
-  width: 160px; height: 160px;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.05);
-}
+
 .sf-texture {
   position: absolute;
   inset: 0;
@@ -125,12 +107,14 @@ a{
   );
   pointer-events: none;
 }
+
 .sf-header {
   position: relative;
   z-index: 1;
   text-align: center;
   margin-bottom: 2.5rem;
 }
+
 .sf-eyebrow {
   display: inline-flex;
   align-items: center;
@@ -141,11 +125,13 @@ a{
   color: rgba(255,255,255,0.6);
   margin-bottom: 0.75rem;
 }
+
 .sf-eyebrow-line {
   display: inline-block;
   width: 24px; height: 1px;
   background: rgba(255,255,255,0.4);
 }
+
 .sf-title {
   font-family: 'Syne', serif;
   font-weight: 800;
@@ -154,6 +140,7 @@ a{
   margin: 0 0 0.75rem;
   line-height: 1.15;
 }
+
 .sf-subtitle {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 0.875rem;
@@ -162,6 +149,7 @@ a{
   margin: 0 auto;
   line-height: 1.65;
 }
+
 .sf-divider {
   position: relative;
   z-index: 1;
@@ -170,13 +158,16 @@ a{
   gap: 12px;
   margin-bottom: 2rem;
   opacity: 0.25;
+
+  &::before, &::after {
+    content: ''; flex: 1;
+    height: 1px;
+    background: #fff;
+  }
 }
-.sf-divider::before, .sf-divider::after {
-  content: ''; flex: 1;
-  height: 1px;
-  background: #fff;
-}
+
 .sf-divider-dot { width: 4px; height: 4px; border-radius: 50%; background: #fff; }
+
 .sf-stats {
   position: relative;
   z-index: 1;
@@ -187,6 +178,7 @@ a{
   border-radius: 4px;
   overflow: hidden;
 }
+
 .sf-stat {
   background: rgba(0,0,0,0.18);
   padding: 1.75rem 1rem 1.5rem;
@@ -196,8 +188,13 @@ a{
   align-items: center;
   gap: 10px;
   transition: background 0.2s ease;
+  &:hover { background: rgba(0,0,0,0.08); }
+
+  &:nth-child(1) .sf-value { animation-delay: 0.1s; }
+  &:nth-child(2) .sf-value { animation-delay: 0.25s; }
+  &:nth-child(3) .sf-value { animation-delay: 0.4s; }
 }
-.sf-stat:hover { background: rgba(0,0,0,0.08); }
+
 .sf-icon-wrap {
   width: 48px; height: 48px;
   border-radius: 50%;
@@ -206,12 +203,14 @@ a{
   display: flex;
   align-items: center;
   justify-content: center;
+
+  img {
+    width: 26px; height: 26px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+  }
 }
-.sf-icon-wrap img {
-  width: 26px; height: 26px;
-  object-fit: contain;
-  filter: brightness(0) invert(1);
-}
+
 .sf-value {
   font-family: 'Syne', serif;
   font-weight: 600;
@@ -221,9 +220,6 @@ a{
   animation: countUp 0.6s ease both;
 }
 
-.sf-stat:nth-child(1) .sf-value { animation-delay: 0.1s; }
-.sf-stat:nth-child(2) .sf-value { animation-delay: 0.25s; }
-.sf-stat:nth-child(3) .sf-value { animation-delay: 0.4s; }
 .sf-label {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 0.75rem;
@@ -232,24 +228,22 @@ a{
   line-height: 1.4;
   max-width: 100px;
 }
+
 @keyframes countUp {
   from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: translateY(0); }
 }
+
 @media (max-width: 991px) {
   .sf-card { padding: 2rem 1.25rem 1.75rem; }
   .sf-stats { grid-template-columns: 1fr; }
   .sf-stat { flex-direction: row; text-align: left; gap: 16px; padding: 1.25rem 1rem; }
   .sf-label { max-width: none; }
-  .hero-img{
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-  }
+  .hero-img { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); }
 }
 
-@media (min-width: 991px)  {
-  .hero-img{
-    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
-  }
+@media (min-width: 991px) {
+  .hero-img { clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%); }
 }
 
 .shine {
@@ -257,52 +251,33 @@ a{
 }
 
 @keyframes pulse-red {
-  0%   { color: #e20000; }
-  25%  { color: #000000;}
-  50%  { color: #e20000;}
-  75%  { color: #000000;}
-  100% { color: #e20000; }
+  0%, 100% { color: #e20000; }
+  25%, 75%  { color: #000; }
+  50%       { color: #e20000; }
 }
 
-.onStat {
-  opacity: 1; /* ✅ becomes visible when class is added */
-}
+.onStat { opacity: 1; }
 
-.shiny-box{
+.shiny-box {
   overflow: hidden;
-  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 30px 30px rgba(0,0,0,0.3);
   position: relative;
-}
 
-/* The Shine Effect Layer */
-.shiny-box::before{
-  content:'';
-  position: absolute;
-  left:-150%;
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.3) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  transform: skewX(-25deg);
-  animation: shineLoop 3s infinite ease-in-out;
-}
+  &::before {
+    content: '';
+    position: absolute;
+    left: -150%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3) 50%, transparent);
+    transform: skewX(-25deg);
+    animation: shineLoop 3s infinite ease-in-out;
+  }
 
-.shiny-box:hover::before{
-  left:150%;
+  &:hover::before { left: 150%; }
 }
 
 @keyframes shineLoop {
-  0% {
-    left: -150%;
-  }
-  50% {
-    left: 150%;
-  }
-  100% {
-    left: 150%; /* Delays the reset back to the start */
-  }
+  0%      { left: -150%; }
+  50%,100% { left: 150%; }
 }
