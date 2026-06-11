@@ -32,6 +32,7 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy{
     this.onStat();
   }
 
+  //call animation on reaching stat section
   onStat(){
     const observer= new IntersectionObserver(
       ([entry])=>{
@@ -40,7 +41,7 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy{
           observer.disconnect();
         }
       },
-      {threshold:1}
+      {threshold:0.2}
     );
     observer.observe(this.stat.nativeElement);
   }
