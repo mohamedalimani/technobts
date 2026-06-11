@@ -1,6 +1,6 @@
 .nb-root { background: #0a0a0a; border-bottom: 1px solid #1f1f1f; font-family: Arial, sans-serif; }
 .nb-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-.nb-brand img { height: 70px; width: auto; object-fit: contain; }
+.nb-brand img { height: 70px; width: 80px; object-fit: contain; }
 .nb-brand-name { font-size: 16px; font-weight: 700; color: #fff; letter-spacing: 0.04em; font-family: Georgia, serif; margin: 0; }
 .nb-brand-name em { color: #8B0000; font-style: normal; }
 .nb-brand-sub { font-size: 9px; letter-spacing: 0.13em; text-transform: uppercase; color: #555; display: block; }
