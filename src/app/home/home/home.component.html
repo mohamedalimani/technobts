@@ -110,50 +110,57 @@
     </p>
   </div>
 
-  <div class="row h-75 align-items-stretch">
-    <!--STATS-COL-->
-    <div class="col-12 col-lg-4 p-2" style="min-height: 350px;">
-      <div class="card h-100">
-        <div class="row g-0 h-100">
-          <div class="col-12 col-md-6 bg-danger d-flex justify-content-center align-items-center shiny-box">
-            <i class="bi bi-check-circle" style="font-size: 3rem; color: aliceblue;"></i>
-          </div>
-          <div class="col-12 col-md-6 text-center d-flex flex-column justify-content-center">
-              <h1 class="title text-danger">{{perCount}}%</h1>
-              <h6 class="title">Projets livrés dans les délais.</h6>
-          </div>
+<div class="row h-75 align-items-stretch">
+
+  <!-- Card 1 -->
+  <div class="col-12 col-lg-4 p-2" style="min-height: 350px;">
+    <div class="card h-100 overflow-hidden" style="border-radius: 14px; box-shadow: 0 6px 24px rgba(0,0,0,0.09);">
+      <div class="row g-0 h-100">
+        <div class="col-12 col-md-6 shiny-box d-flex justify-content-center align-items-center" style="background: linear-gradient(135deg, #7f1d1d, #b91c1c); position:relative;">
+          <div class="icon-ring"><i class="bi bi-check-circle" style="font-size:1.7rem; color:rgba(255,255,255,0.92);"></i></div>
         </div>
-      </div>
-    </div>
-    <!--STATS-COL-->
-    <div class="col-12 col-lg-4 p-2" style="min-height: 350px;">
-      <div class="card h-100">
-        <div class="row g-0 h-100">
-          <div class="col-12 col-md-6 bg-warning d-flex justify-content-center align-items-center shiny-box">
-            <i class="bi bi-clock" style="font-size: 3rem; color: aliceblue;"></i>
-          </div>
-          <div class="col-12 col-md-6 text-center d-flex flex-column justify-content-center">
-              <h1 class="title text-warning">{{durationCount}}+</h1>
-              <h6 class="title">Heures de travail sans accident</h6>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--STATS-COL-->
-    <div class="col-12 col-lg-4 p-2" style="min-height: 350px;">
-      <div class="card h-100">
-        <div class="row g-0 h-100">
-          <div class="col-12 col-md-6 bg-dark d-flex justify-content-center align-items-center shiny-box">
-            <i class="bi bi-bar-chart" style="font-size: 3rem; color: aliceblue;"></i>
-          </div>
-          <div class="col-12 col-md-6 text-center d-flex flex-column justify-content-center">
-              <h1 class="title">{{pjtCount}}+</h1>
-              <h6 class="title">Projets réalisés avec succès</h6>
-          </div>
+        <div class="col-12 col-md-6 d-flex flex-column justify-content-center p-3">
+          <h2 class="title fw-bold mb-0" style="font-size:2.2rem; letter-spacing:-1px; color:#b91c1c;">{{perCount}}<span style="font-size:1.2rem; opacity:.65;">%</span></h2>
+          <h3 class="text-muted mb-0" style="line-height:1.4;">Projets livrés dans les délais</h3>
+          <h6 class="badge-pill mt-2" style="background:#fef2f2; color:#991b1b; font-size:11px; padding:3px 10px; border-radius:20px; width:fit-content;">🏆 Haute fiabilité</h6>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Card 2 -->
+  <div class="col-12 col-lg-4 p-2" style="min-height: 350px;">
+    <div class="card h-100 overflow-hidden" style="border-radius: 14px; box-shadow: 0 6px 24px rgba(0,0,0,0.09);">
+      <div class="row g-0 h-100">
+        <div class="col-12 col-md-6 shiny-box d-flex justify-content-center align-items-center" style="background: linear-gradient(135deg, #3dac11, #7cd10d); position:relative;">
+          <div class="icon-ring"><i class="bi bi-clock" style="font-size:1.7rem; color:rgba(255,255,255,0.92);"></i></div>
+        </div>
+        <div class="col-12 col-md-6 d-flex flex-column justify-content-center p-3">
+          <h2 class="title fw-bold mb-0" style="font-size:2.2rem; letter-spacing:-1px; color:#0bb419;">{{durationCount}}<span style="font-size:1.2rem; opacity:.65;">+</span></h2>
+          <h3 class="text-muted mb-0" style="line-height:1.4;">Heures de travail sans accident</h3>
+          <h6 class="badge-pill mt-2" style="background:#fffbeb; color:#92400e; font-size:11px; padding:3px 10px; border-radius:20px; width:fit-content;">🛡 Zéro incident</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="col-12 col-lg-4 p-2" style="min-height: 350px;">
+    <div class="card h-100 overflow-hidden" style="border-radius: 14px; box-shadow: 0 6px 24px rgba(0,0,0,0.09);">
+      <div class="row g-0 h-100">
+        <div class="col-12 col-md-6 shiny-box d-flex justify-content-center align-items-center" style="background: linear-gradient(135deg, #1a1a2e, #0f3460); position:relative;">
+          <div class="icon-ring"><i class="bi bi-bar-chart" style="font-size:1.7rem; color:rgba(255,255,255,0.92);"></i></div>
+        </div>
+        <div class="col-12 col-md-6 d-flex flex-column justify-content-center p-3">
+          <h2 class="title fw-bold mb-0" style="font-size:2.2rem; letter-spacing:-1px; color:#1e40af;">{{pjtCount}}<span style="font-size:1.2rem; opacity:.65;">+</span></h2>
+          <h3 class="text-muted mb-0" style="line-height:1.4;">Projets réalisés avec succès</h3>
+          <h6 class="badge-pill mt-2" style="background:#eff6ff; color:#1e40af; font-size:11px; padding:3px 10px; border-radius:20px; width:fit-content;">📈 En croissance</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
 
 </div>
 

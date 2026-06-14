@@ -247,7 +247,7 @@ a { text-decoration: none; }
 }
 
 .shine {
-  animation: pulse-red 7s ease-in-out infinite;
+  animation: pulse-red 4s ease-in-out infinite;
 }
 
 @keyframes pulse-red {
@@ -258,26 +258,25 @@ a { text-decoration: none; }
 
 .onStat { opacity: 1; }
 
-.shiny-box {
-  overflow: hidden;
-  box-shadow: 0 30px 30px rgba(0,0,0,0.3);
-  position: relative;
-
-  &::before {
-    content: '';
-    position: absolute;
-    left: -150%;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3) 50%, transparent);
-    transform: skewX(-25deg);
-    animation: shineLoop 3s infinite ease-in-out;
-  }
-
-  &:hover::before { left: 150%; }
+.shiny-box { overflow: hidden; }
+.shiny-box::before {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0;
+  left: -150%;
+  width: 50%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.12) 50%, transparent);
+  transform: skewX(-20deg);
+  animation: shineLoop 3.5s infinite ease-in-out;
 }
-
 @keyframes shineLoop {
-  0%      { left: -150%; }
-  50%,100% { left: 150%; }
+  0%        { left: -150%; }
+  60%, 100% { left: 200%; }
+}
+.icon-ring {
+  width: 60px; height: 60px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.1);
+  display: flex; align-items: center; justify-content: center;
 }

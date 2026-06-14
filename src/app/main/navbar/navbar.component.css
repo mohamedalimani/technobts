@@ -3,7 +3,13 @@
 .nb-brand img { height: 70px; width: 80px; object-fit: contain; }
 .nb-brand-name { font-size: 16px; font-weight: 700; color: #fff; letter-spacing: 0.04em; font-family: Georgia, serif; margin: 0; }
 .nb-brand-name em { color: #8B0000; font-style: normal; }
-.nb-brand-sub { font-size: 9px; letter-spacing: 0.13em; text-transform: uppercase; color: #555; display: block; }
+.nb-brand-sub { 
+    font-size: 9px; 
+    letter-spacing: 0.13em; 
+    text-transform: uppercase; 
+    color: #ffffff; 
+    display: block; 
+}
 .nb-toggler { background: none; border: 1px solid #2a2a2a; border-radius: 3px; padding: 6px 9px; color: #888; }
 .nb-toggler .ti { font-size: 18px; }
 .nb-toggler:focus { box-shadow: none; }
